@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    }
+    #navbar{
+        /* border: 1px solid red; */
+        display:flex;
+        width:100%;
+        height:80px;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar a{
+    color: black;
+    text-decoration:none;
+  }
+    #navbar #logo{
+        /* border: 1px solid red; */
+        width:15%;
+        margin-left:20px; 
+    }
+    #navbar #logo>a>img{
+        display: flex;
+        /* border: 1px solid teal; */
+        width:100%;
+        height:70px;
+        margin:auto;
+    }
+    #navbar #input_tag{
+        display: flex;
+        /* border: 1px solid red; */
+        width:40%;
+        height:60px;
+        margin-left: 10px;
+        margin:auto;
+    }
+    #navbar #input_tag>input{
+        display: flex;
+        border: 1px solid black;
+        padding: 10px;
+        width:100%;
+        height:100%;
+        margin:auto;
+        border-radius:20px;
+    }
+    #navbar #Review{
+        /* border: 1px solid red; */
+        width:6%;
+        display:flex;
+        margin-left:20px; 
+    }
+    #navbar #Review>img{
+        display: flex;
+        /* border: 1px solid teal; */
+        width:25%;
+        margin:auto;
+    }
+    #navbar #Review>p{
+        display: flex;
+        /* border: 1px solid teal; */
+        font-family:"Trip Sans VF", "Trip Sans", Arial, sans-serif;
+        font-size: 16px;
+        margin-left:10px; 
+        margin:auto;
+    }
+    #navbar #trips{
+        /* border: 1px solid red; */
+        width:5%;
+        margin-left: 20px;
+        display:flex;
+    }
+    #navbar #trips>img{
+        display: flex;
+        /* border: 1px solid teal; */
+        width:25%;
+        margin:auto;
+    }
+    #navbar #trips>p{
+        display: flex;
+        font-family:"Trip Sans VF", "Trip Sans", Arial, sans-serif;
+        font-size: 16px;
+        /* border: 1px solid teal; */
+        margin:auto;
+    }
+    #navbar #alerts{
+        /* border: 1px solid red; */
+        width:5%;
+        margin-left: 20px;
+        display:flex;
+    }
+    #navbar #alerts>img{
+        display: flex;
+        /* border: 1px solid teal; */
+        width:25%;
+        margin:auto;
+    }
+    #navbar #alerts>p{
+        display: flex;
+        font-family:"Trip Sans VF", "Trip Sans", Arial, sans-serif;
+        font-size: 16px;
+        /* border: 1px solid teal; */
+        margin:auto;
+    }
+    #navbar #signin{
+        margin-right:20px;
+        margin-left: 20px;
+        width:8%;
+    }
+    #navbar #signin>button{
+        padding:12px;
+        font-size: 15px;
+        border-radius: 20px;
+        background-color: black;
+    }
+    #navbar #signin>button>a{
+        color:white;
+        
+    }
