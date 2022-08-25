@@ -140,7 +140,7 @@
         position: relative;
         width: 90%;
         display: grid;
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(3,1fr);
         grid-template-rows: auto;
         gap:5px;
         margin-left: 70px;
@@ -150,14 +150,32 @@
     #box4 div
 
     {
-        width:280px;
-        height: 430px;
+        width:380px;
+        height: 530px;
     }
     #box4 img{
-        width:280px;
-        height: 300px;
+        width:380px;
+        height: 400px;
         color: black;
     }
+    #seeall
+    {
+        width: 100%;
+        height: 100px
+    }
+ #btnseeall
+ {
+    margin-left: 700px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid;
+    color: white;
+    background-color: black;
+
+ }
+
     
 </style>
 <body>
@@ -221,8 +239,14 @@
             Top Attractions in Patna
 
         </h1>
+        </div>
         <div id="box4"></div>
-    </div>
+        <div id="seeall">
+            <button id="btnseeall">see all</button>
+        </div>
+        <hr>
+
+
 </body>
 </html>
 <script>
@@ -303,6 +327,34 @@
         });
     }
     box3();
+    let box4=async()=>
+    {
+        const url=`https://damp-garden-07205.herokuapp.com/api/attractioninpatan`;
+        let res=await fetch(url);
+        let data=await res.json();
+       // console.log(data);
+        kuku4(data);
+    }
+    let kuku4=(data)=>
+    {
+        let container=document.getElementById("box4");
+        data.forEach(element => {
+            console.log(element);
+            let div=document.createElement("div");
+            let img=document.createElement("img");
+            img.src=element.image;
+            let name=document.createElement("h3");
+            name.innerText=element.name;
+            let place=document.createElement("p");
+            place.innerText=element.place;
+            
+            let des=document.createElement("p");
+            des.innerText=element.des;
+            div.append(img,name,place,des);
+            container.append(div);
+        });
+    }
+    box4();
    
    
 </script>
