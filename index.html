@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      #layout{
+        display: flex;
+        width: 85%;
+        height: auto;
+        margin: auto;
+        /* border:1px solid red; */
+      }
+      .form{
+        display: flex;
+        width: 15%;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+        
+      }
+      .form:hover{
+        /* background-color:transparent ; */
+        cursor: pointer;
+      }
+      .adj{
+        width: 30px;
+        height: 30px;
+      }
+      #search{
+        
+        width: 84%;
+        margin: auto;
+        margin-top: 30px;
+      }
+      #tour{
+        width: 84%;
+        margin: auto;
+      }
+      #tour_slide{
+        width: 100%;
+        display: flex;
+        border: 1px solid red;
+        gap: 10px;
+        padding: 1px;
+        overflow:auto ;
+
+
+      }
+      .size{
+       width: 273px;
+
+      }
+      .container {
+       position: relative;
+       width: 100%;
+       max-width: 400px;
+      }
+      .likes{
+       width: 35px;
+       height: 35px;
+       border: none;
+       position: absolute;
+        top: 10%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: white;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+
+      }
+      .logo{
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+      }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="layout">
+     <div class="form">
+      <p>Hotels</p>
+      <img class="adj" src="https://img.icons8.com/material-outlined/344/bed.png" alt="">
+     </div>
+     <div class="form">
+        <p>Holiday Homes</p>
+        <img class="adj" src="https://img.icons8.com/material-outlined/344/real-estate.png" alt="">
+     </div>
+     <div class="form">
+        <p>Things to Do</p>
+        <img class="adj" src="https://img.icons8.com/material-outlined/344/overview-pages-3.png" alt="">
+     </div>
+     <div class="form">
+        <p>Restaurants</p>
+        <img class="adj" src="https://image.shutterstock.com/image-vector/fork-knife-eat-vector-icon-260nw-1027050490.jpg" alt="">
+     </div>
+     <div class="form">
+        <p>Travel Forums</p>
+        <img class="adj" src="https://img.icons8.com/external-outline-berkahicon/2x/external-Forum-online-learning-outline-berkahicon.png" alt="">
+     </div>
+     <div class="form">
+        <p>More</p>
+        <img class="adj" src="https://img.icons8.com/ios-glyphs/2x/more.png" alt="">
+     </div>
+    </div>
+    <div id="search">
+       <img  src="https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans.webp" alt="">
+    </div>
+    <div id="tour">
+      <h2>Ways to tour Pune</h2>
+      <p>Book these experiences for a close-up look at Pune.</p>
+      <div id="tour_slide">
+       
+      </div>
+    </div>
+    
+</body>
+</html>
+<script>
+   let first_slider=[
+    {
+      id:1,
+      image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/7c/44/35/photo0jpg.jpg?w=300&h=-1&s=1",
+      para:"Latest Recipe"
+    },
+    {
+      id:2,
+      image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5f/d6/94/caption.jpg?w=300&h=300&s=1",
+      para:"Secrets of Wild India Tour",
+      lo:"https://img.icons8.com/fluency/2x/like.png"
+    },
+    {
+      id:3,
+      image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/de/e7/80/k-k.jpg?w=300&h=300&s=1",
+      para:"Kebabs & Kurries"
+    },
+    {
+      id:4,
+      image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/cb/4a/20/ballroom.jpg?w=300&h=300&s=1",
+      para:"The Pride Hotel Nagpur"
+    },
+    {
+      id:5,
+      image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/85/76/47/caption.jpg?w=300&h=300&s=1",
+      para:"The best of Nagpur walking tour"
+    },
+    {
+      id:6,
+      image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/f0/7a/01/getlstd-property-photo.jpg?w=300&h=300&s=1",
+      para:"Urban Hermitage"
+    },
+    {
+      id:7,
+      image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/f4/4a/2d/caption.jpg?w=300&h=300&s=1",
+      para:"Tiger & Temple (11 Days)"
+    },
+    {
+      id:8,
+      image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5d/c6/ea/caption.jpg?w=300&h=300&s=1",
+      para:"Two Night Tiger Safari Experience at Tadoba National Park &Transfers From Nagpur"
+    },
+   ]
+   let tourslide=document.getElementById("tour_slide")
+   let likelogo;
+   appends(first_slider)
+   function appends(data){
+    data.forEach(({id,image,para,lo}) => {
+      let div=document.createElement("div")
+      let div1=document.createElement("div")
+      div1.setAttribute("class","container")
+      let img=document.createElement("img")
+      let par=document.createElement("p")
+      let like=document.createElement("button")
+      
+      like.onclick=()=>{
+        ChangeColour(id)
+        // likelogo.src="https://img.icons8.com/fluency/2x/like.png"
+      }
+      likelogo=document.createElement("img")
+      likelogo.setAttribute("id",`sd${id}`)
+      likelogo.setAttribute("class","logo")
+      img.setAttribute("class","size")
+      like.setAttribute("class","likes")  
+      img.src=image
+      par.innerText=para
+      likelogo.src="https://img.icons8.com/windows/2x/like.png"
+
+      like.append(likelogo)
+      div1.append(img,like)
+      div.append(div1,par)
+      tourslide.append(div)
+    });
+    
+
+   }
+  
+   let ChangeColour=(id)=>{
+    let sd=document.getElementById(`sd${id}`)
+    console.log(id)
+      sd.src="https://img.icons8.com/fluency/2x/like.png"
+   }
+   
+ 
+   
+</script>
