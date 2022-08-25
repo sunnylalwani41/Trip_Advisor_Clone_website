@@ -1,7 +1,7 @@
 *{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
     }
     #navbar{
         /* border: 1px solid red; */
@@ -12,8 +12,8 @@
         align-items: center;
     }
     #navbar a{
-    color: black;
-    text-decoration:none;
+        color: black;
+        text-decoration:none;
   }
     #navbar #logo{
         /* border: 1px solid red; */
@@ -115,5 +115,4 @@
     }
     #navbar #signin>button>a{
         color:white;
-        
     }
