@@ -1,23 +1,4 @@
-// let data = [
-//   {
-//     name: "Highlights of Mumbai Private Sightseeing Tour:Winner of TRAVELLERS CHOICE AWARD",
-//     image:
-//       "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/06/6a/c4/f0.jpg",
-//     reviews: 247,
-//     price: 8500,
-//     recomended: 99,
-//     persons: 1,
-//   },
-//   {
-//     name: "5-Hour Private Mumbai Sightseeing Tour",
-//     image:
-//       "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/06/e4/85/39.jpg",
-//     reviews: 255,
-//     price: 8000,
-//     recomended: 96,
-//     persons: 1,
-//   },
-// ];
+
 let data = JSON.parse(localStorage.getItem("data"));
 window.addEventListener("load", () => {
   main();

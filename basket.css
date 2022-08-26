@@ -1,9 +1,20 @@
 * {
   box-sizing: border-box;
   padding: 0%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#bookWith {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  padding:0px 24px;
+}
+#bookWith > img {
+  width: 100%;
+  height: 100px;
 }
 #mid_div {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 80%;
   margin: auto;
   padding: 0px 24px;
@@ -29,7 +40,7 @@
   height: 100%;
 }
 #container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 70%;
 }
 a {
@@ -37,10 +48,13 @@ a {
 }
 .cards {
   display: flex;
+  margin-top: 20px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 .cards > div {
   margin-left: 20px;
-  width:80%;
+  width: 80%;
   padding: 10px;
 }
 #imageDiv {
@@ -77,47 +91,53 @@ a {
   width: 20px;
   height: 20px;
 }
-#amountDiv{
+#amountDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.perform{
+.perform {
   font-weight: 400;
   cursor: pointer;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: underline;
   font-size: large;
 }
 
 /* Review Div */
 
-#reviewOrder{
+#reviewOrder {
   border: 1px solid black;
   border-radius: 10px;
   position: absolute;
-  padding: 30px;
+  padding: 20px;
   width: 350px;
   left: 1020px;
-  top:127px;
+  top: 127px;
 }
-.flex{
+.flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#checkout{
+#checkout {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 50px;
-  background-color:#f2b203;
-  color:black;
+  background-color: #f2b203;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: large;
   font-weight: 600;
   border-radius: 40px;
   cursor: pointer;
+}
+.RevText {
+  font-size: large;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
