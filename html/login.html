@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .main>form {
+            margin: auto;
+            margin-top: 50px;
+            width: 30%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 30px;
+            background-color: rgba(214, 210, 210, 0.694);
+            border-radius: 5px;
+        }
+
+        #pwd:focus {
+            outline: none;
+        }
+
+        #email {
+            outline: none;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        .main>form>input[type="submit"] {
+            background-color:black;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        .main>form>input[type="submit"]:hover {
+            background-color: #313131;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        input[type="number"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            color: rgb(22, 22, 18);
+        }
+
+        .main {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <div class="main">
+        <h1>Login</h1>
+        <form>
+            <label for="">Email</label><br />
+            <input type="email" placeholder="Enter email" id="email"><br>
+            <br>
+            <label for="">Password</label><br />
+            <input type="password" placeholder="Enter password" id="pwd">
+            <input type="submit">
+        </form>
+    </div>
+   
+</body>
+
+</html>
+<script>
+    document.querySelector(".main>form").addEventListener("submit", clickMe);
+
+let arr1 = JSON.parse(localStorage.getItem("datalis")) || [];
+console.log(arr1);
+let l = arr1.length;
+console.log(l);
+function clickMe() {
+    event.preventDefault();
+    let email = document.querySelector("#email").value;
+    let pass = document.querySelector("#pwd").value;
+    console.log(email);
+    console.log(pass);
+    let flag = 0;
+    for (let i = 0; i < l; i++) {
+        if (arr1[i].em == email && arr1[i].pwd == pass) {
+            flag = 1;
+            break;
+
+        }
+    }
+    if (flag == 0) {
+        alert("Please register first!");
+        window.location.href = "signup.html";
+    }
+    else {
+        localStorage.setItem("loginOrNot", "true");
+        alert("Login Successfully");
+        window.location.href = "index.html";
+    }
+}
+</script>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            /* background-image: url("https://wallpaperaccess.com/full/4597125.png"); */
+            background-size: cover;
+        }
+
+        #paycart {
+            width: 25%;
+            margin-left: 5%;
+            margin-top: 25px;
+            text-align: center;
+            padding: 50px 30px;
+            color: #fffffd;
+            background-color:white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        #toppay {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #payimg {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+        }
+
+        #payimg>img {
+            width: 20%;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        input {
+            font-size: 18px;
+            margin-bottom: 20px;
+            height: 30px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        #cardyear {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        #month {
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        #year {
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        select {
+            height: 30px;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+
+        #paymentprocess {
+            border: none;
+            height: 35px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            padding: 5px 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        #paymentprocess:hover {
+            background-color: rgb(69, 64, 64);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="paycart">
+        <div id="toppay">
+            <h1>Payment</h1>
+            <h1 id="totalpayamount"></h1>
+        </div>
+        <div id="payimg">
+            <img src="https://1361832452.rsc.cdn77.org/gesa/files/2560px-MasterCard_Logo.svg__3.png?1626945996"
+                alt="Not Found">
+            <img src="https://1000logos.net/wp-content/uploads/2017/06/VISA-Logo-2006.png" alt="Not Found">
+            <img src="https://1000logos.net/wp-content/uploads/2016/10/American-Express-Color.png" alt="Not Found">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Rupay-Logo.png/1200px-Rupay-Logo.png"
+                alt="Not Found">
+        </div>
+        <form>
+            <input type="number" id="cardnum" placeholder="Enter Card Number">
+            <div id="cardyear">
+                <select id="month">
+                    <option value="month">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select id="year">
+                    <option value="year">Year</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                    <option value="2035">2035</option>
+                </select>
+            </div>
+            <input type="password" id="cvvnum" placeholder="Enter CVV Here" maxlength="3">
+            <input type="text" id="personname" placeholder="Enter Name">
+            <input type="number" id="personmobile" placeholder="Enter Your Mobile Number">
+            <input type="submit" value="Submit Payment" id="paymentprocess">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    totalpayamount = localStorage.getItem("last_total_to_pay");
+    document.querySelector("#totalpayamount").innerHTML = totalpayamount + " " + "₹";
+
+
+
+    localStorage.setItem("cardData", JSON.stringify({
+        cardnumber: "123456789",
+        month: "04",
+        year: "2022",
+        cvv: "322",
+        name: "shubham",
+        mobile: "9687881007"
+    }));
+
+    let cardDataFromLs = JSON.parse(localStorage.getItem("cardData"));
+
+    document.querySelector("form").addEventListener("submit", function () {
+        event.preventDefault();
+        let object = {
+            cardnumber: document.querySelector("#cardnum").value,
+            month: document.querySelector("#month").value,
+            year: document.querySelector("#year").value,
+            cvv: document.querySelector("#cvvnum").value,
+            name: document.querySelector("#personname").value,
+            mobile: document.querySelector("#personmobile").value
+        }
+
+        // console.log(object);
+        if (JSON.stringify(cardDataFromLs) == JSON.stringify(object)) {
+            alert("OTP sent to your registered mobile number");
+            localStorage.setItem("OTP", "12345")
+            location.href = "otp.html"
+        }
+        else {
+            alert("Invalid card details")
+        }
+    })
+
+</script>

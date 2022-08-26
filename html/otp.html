@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Page</title>
+    <style>
+        body {
+            background-image: url("https://payu.in/blog/wp-content/uploads/2020/12/WhatsApp-Image-2020-12-14-at-6.19.03-PM-1250x640.jpeg");
+        }
+
+        #parent {
+            border: 1px solid;
+            width: 20%;
+            margin-top: 250px;
+            margin-left: 1000px;
+            padding: 20px 10px;
+            background-color: rgba(181, 75, 208, 0.3);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            height: 25px;
+        }
+
+
+        #otp {
+            margin-top: 20px;
+        }
+
+        #otpsubmit {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <form>
+            <input type="number" id="otp" placeholder="Enter OTP Here">
+            <input type="submit" id="otpsubmit">
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let OtpFromLs = localStorage.getItem("OTP");
+    document.querySelector("form").addEventListener("submit", function () {
+        event.preventDefault();
+        let otp = document.querySelector("#otp").value;
+        if (OtpFromLs === otp) {
+            alert("Payment Successfully");
+            location.href = "index.html";
+        }
+        else {
+            alert("OTP is Invalid");
+        }
+    })
+</script>
