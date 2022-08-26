@@ -121,6 +121,9 @@ function append(data) {
 }
 function Edit(ind) {
   let x = window.prompt("Add Persons");
+  if (x == "" || x == null) {
+    return;
+  }
   data[ind].persons = +x;
   localStorage.setItem("data", JSON.stringify(data));
   main(data);
