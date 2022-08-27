@@ -6,7 +6,7 @@
 #bookWith {
   width: 80%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   padding:0px 24px;
 }
 #bookWith > img {
@@ -14,9 +14,9 @@
   height: 100px;
 }
 #mid_div {
-  /* border: 1px solid black; */
   width: 80%;
   margin: auto;
+  margin-top: 30px;
   padding: 0px 24px;
 }
 #heading {
@@ -110,12 +110,13 @@ a {
 
 #reviewOrder {
   border: 1px solid black;
+  display: none;
   border-radius: 10px;
   position: absolute;
   padding: 20px;
   width: 350px;
   left: 1020px;
-  top: 127px;
+  top: 280px;
 }
 .flex {
   display: flex;

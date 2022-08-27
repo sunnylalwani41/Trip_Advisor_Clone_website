@@ -1,14 +1,12 @@
-
 let data = JSON.parse(localStorage.getItem("data"));
-window.addEventListener("load", () => {
-  main();
-});
 function main() {
-  let data = JSON.parse(localStorage.getItem("data"));
   let subtotal = document.querySelector("#subtotal");
   let Total = document.querySelector("#total");
   let total = document.querySelector("#Total");
   let x = 0;
+  if (data.length == 1) {
+    document.querySelector("#bookWith").style.marginTop = "200px";
+  }
 
   for (let i = 0; i < data.length; i++) {
     let y = data[i].price * data[i].persons;
@@ -23,7 +21,7 @@ function main() {
 
   if (data.length !== 0) {
     append(data);
-  }
+  }   
 }
 function append(data) {
   let cont = document.querySelector("#container");
@@ -98,6 +96,7 @@ function append(data) {
     main_div.append(image_div, content_div);
 
     cont.append(main_div);
+    document.querySelector("#reviewOrder").style.display = "block";
   });
 }
 function Edit(ind) {
@@ -114,4 +113,7 @@ function Remove(ind) {
   data.splice(ind, 1);
   localStorage.setItem("data", JSON.stringify(data));
   main(data);
+  if (data.length == 0) {
+    window.location.reload();
+  }
 }
