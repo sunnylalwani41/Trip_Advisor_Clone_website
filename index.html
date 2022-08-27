@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h4 {
+      font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+      /* Font being Rendered:Trip Sans VF100.0% (remote) */
+      font-size: 24px
+    }
+
+    p {
+      font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+      /* Font being Rendered:Trip Sans VF100.0% (remote) */
+      font-size: 15px;
+
+    }
+
+    #layout {
+      display: flex;
+      width: 85%;
+      height: auto;
+      margin: auto;
+      /* border:1px solid red; */
+    }
+
+    .form {
+      display: flex;
+      width: 15%;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: auto;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    .form:hover {
+      background-color:teal ;
+      cursor: pointer;
+      color: white;
+    }
+
+    .adj {
+      width: 30px;
+      height: 30px;
+      /* background-color: white; */
+    }
+
+    #search {
+
+      width: 84%;
+      margin: auto;
+      margin-top: 30px;
+    }
+
+    .tour {
+      width: 84%;
+      margin: auto;
+    }
+
+    /* #tour_slide{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        padding: 1px;
+        overflow-x:hidden ;
+        transition: 2s;
+        scroll-behavior: smooth;
+      }
+      #to_slide{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        padding: 1px;
+        overflow-x:hidden ;
+        transition: 2s;
+        scroll-behavior: smooth;
+      } */
+    .equal {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      padding: 1px;
+      overflow-x: hidden;
+      transition: 2s;
+      scroll-behavior: smooth;
+      /* overflow:scroll ; */
+
+    }
+
+    .equals {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      padding: 1px;
+      overflow-x: hidden;
+      transition: 2s;
+      scroll-behavior: smooth;
+      /* overflow:scroll ; */
+    }
+
+
+    .size {
+      width: 273px;
+
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .likes {
+      width: 35px;
+      height: 35px;
+      border: none;
+      position: absolute;
+      top: 10%;
+      left: 90%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: white;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+
+    }
+
+    .logo {
+      width: 20px;
+      height: 20px;
+      margin-top: 5px;
+    }
+
+    .fashion:hover {
+      cursor: pointer;
+    }
+
+    .le {
+      width: 30px;
+      height: 30px;
+      /* margin-top: 10px; */
+      background-color: white;
+      border-radius: 20px;
+      border: 2px solid black;
+    }
+
+    /* .le:hover{
+        
+      } */
+    .lefts {
+      background-color: transparent;
+      border: none;
+      margin: -100px 0px 0px 0px;
+    }
+    .for_slider {
+      width: 108%;
+      display: flex;
+      margin-left: -30px;
+    }
+
+    #get_out {
+      width: 84%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #FAF1ED;
+      margin: 50px 0px 0px 120px;
+
+    }
+
+    #getImage {
+      width: 450px;
+      height: 200px;
+      margin-right: -70px;
+    }
+
+    #gbsee>button {
+      background-color: black;
+      color: white;
+      padding: 15px;
+      border-radius: 20px;
+    }
+
+    .adjus {
+      margin-top: 0px;
+    }
+    #png{
+      margin-top: 30px;
+    }
+    @media all and (min-width:768px) and (max-width:1200px){
+      /* #layout {
+      display: flex;
+      width: 85%;
+      height: 200px; */
+      /* margin: 150px; */
+      /* border:1px solid red; */
+    /* }  */
+     #search {
+      width: 90%;
+      /* margin: auto; */
+      margin-top: 30px;
+      }
+
+      .tour {
+      width: 100%;
+      margin: auto;
+    }
+    .equal {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      padding: 1px;
+      overflow-x: hidden;
+      transition: 2s;
+      scroll-behavior: smooth;
+      /* overflow:scroll ; */
+    }
+
+    }
+    @media all and (max-width:768px){
+      /* #layout {
+      display: flex;
+      width: 70%;
+      height: 100px;
+      margin: 100px;
+      border:1px solid red;
+    } */
+    /* .form {
+      display: flex;
+      width: 10%;
+      border: 1px solid black;
+      border-radius: 7px;
+      margin: auto;
+      justify-content: space-around;
+      align-items: center;
+
+    } */
+      #search {
+
+      width: 40%;
+      /* margin: auto; */
+      margin-top: 30px;
+      } 
+   
+
+    }
+    @media all and (max-width:480px){
+      /* #layout {
+      display: flex;
+      width: 30%;
+      height: auto;
+      margin: auto;
+      border:1px solid red;
+    } */
+     #search {
+
+      width: 30%;
+      margin: auto;
+      margin-top: 30px;
+}
+    }
+  </style>
+  <title>Home</title>
+</head>
+
+<body>
+  <div id="navbar">
+
+  </div>
+  <div id="layout">
+    <div id="f1" class="form">
+      <p>Hotels</p>
+      <img class="adj" src="https://img.icons8.com/material-outlined/344/bed.png" alt="">
+    </div>
+    <div class="form">
+      <p>Holiday Homes</p>
+      <img class="adj" src="https://img.icons8.com/material-outlined/344/real-estate.png" alt="">
+    </div>
+    <div class="form">
+      <p>Things to Do</p>
+      <img class="adj" src="https://img.icons8.com/material-outlined/344/overview-pages-3.png" alt="">
+    </div>
+    <div class="form">
+      <p>Restaurants</p>
+      <img class="adj" src="https://img.icons8.com/glyph-neue/2x/restaurant.png"
+        alt="">
+    </div>
+    <div class="form">
+      <p>Travel Forums</p>
+      <img class="adj"
+        src="https://img.icons8.com/external-outline-berkahicon/2x/external-Forum-online-learning-outline-berkahicon.png"
+        alt="">
+    </div>
+    <div class="form">
+      <p>More</p>
+      <img class="adj" src="https://img.icons8.com/ios-glyphs/2x/more.png" alt="">
+    </div>
+  </div>
+  <div id="search">
+    <img src="https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans.webp" alt="">
+  </div>
+  <!--                         -->
+  <div class="tour">
+    <h4>You might like these</h4>
+    <p>More places to stay in Pune</p>
+    <div class="for_slider">
+      <button class="lefts" id="left">
+        <img class="le" src="https://img.icons8.com/windows/2x/long-arrow-left.png" alt="">
+      </button>
+      <div class="equal" id="tour_slide">
+
+      </div>
+      <button class="lefts" id="right">
+        <img class="le" src="https://img.icons8.com/fluency-systems-filled/2x/long-arrow-right.png" alt="">
+      </button>
+    </div>
+  </div>
+  <div id="get_out">
+    <div id="gbsee">
+      <h4>Get out there</h4>
+      <p>Best of the Best tours, attractions & activities you won't want to miss.</p>
+      <button>See the list</button>
+    </div>
+    <div id="trachoice">
+      <img id="getImage"
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/f7/1d/4d/caption.jpg?w=1000&h=-1&s=1" alt="">
+    </div>
+  </div>
+  <div class="tour">
+    <h4>Ways to tour Pune</h4>
+    <p>Book these experiences for a close-up look at Pune.</p>
+    <div class="for_slider">
+      <button class="lefts" id="lefti">
+        <img class="le" src="https://img.icons8.com/windows/2x/long-arrow-left.png" alt="">
+      </button>
+      <div class="equal" id="to_slide">
+
+      </div>
+      <button class="lefts" id="righti">
+        <img class="le" src="https://img.icons8.com/fluency-systems-filled/2x/long-arrow-right.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!--                    -->
+  <div class="tour">
+    <h4>
+      Top destinations for your next holiday
+    </h4>
+    <div class="for_slider">
+      <button class="lefts" id="leftis">
+        <img class="le" src="https://img.icons8.com/windows/2x/long-arrow-left.png" alt="">
+      </button>
+      <div class="equals" id="desti">
+
+      </div>
+      <button class="lefts" id="rightis">
+        <img class="le" src="https://img.icons8.com/fluency-systems-filled/2x/long-arrow-right.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!--  -->
+  <div id="png">
+  <img src="/day3/Image20220826182113.png" alt="">
+  </div>
+  <!--  -->
+
+  <div id="footer">
+
+  </div>
+</body>
+
+</html>
+<script>
+  let f1=document.getElementById("f1").addEventListener("click",function(){
+    window.location.href="trip.html"
+  })
+
+  let first_slider = [
+    {
+      id: 1,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/7c/44/35/photo0jpg.jpg?w=300&h=-1&s=1",
+      para: "Latest Recipe"
+    },
+    {
+      id: 2,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5f/d6/94/caption.jpg?w=300&h=300&s=1",
+      para: "Secrets of Wild India Tour",
+      lo: "https://img.icons8.com/fluency/2x/like.png"
+    },
+    {
+      id: 3,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/de/e7/80/k-k.jpg?w=300&h=300&s=1",
+      para: "Kebabs & Kurries"
+    },
+    {
+      id: 4,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/cb/4a/20/ballroom.jpg?w=300&h=300&s=1",
+      para: "The Pride Hotel Nagpur"
+    },
+    {
+      id: 5,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/85/76/47/caption.jpg?w=300&h=300&s=1",
+      para: "The best of Nagpur walking tour"
+    },
+    {
+      id: 6,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/f0/7a/01/getlstd-property-photo.jpg?w=300&h=300&s=1",
+      para: "Urban Hermitage"
+    },
+    {
+      id: 7,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/f4/4a/2d/caption.jpg?w=300&h=300&s=1",
+      para: "Tiger & Temple (11 Days)"
+    },
+    {
+      id: 8,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5d/c6/ea/caption.jpg?w=300&h=300&s=1",
+      para: "Two Night Tiger Safari Experience at Tadoba National Park &Transfers From Nagpur"
+    },
+  ]
+  let tourslide = document.getElementById("tour_slide")
+  let to = document.getElementById("to_slide")
+  let likelogo;
+  appends(first_slider, tourslide)
+
+  function appends(data, tourslide) {
+    data.forEach(({ id, image, para, lo }) => {
+      let div = document.createElement("div")
+      div.setAttribute("class", "fashion")
+      // div.onclick=()=>{
+      //   window.location.href=""
+      // }
+      let div1 = document.createElement("div")
+      div1.setAttribute("class", "container")
+      let img = document.createElement("img")
+      let par = document.createElement("p")
+      let like = document.createElement("button")
+
+      like.onclick = () => {
+        ChangeColour(id,image,para)
+        // likelogo.src="https://img.icons8.com/fluency/2x/like.png"
+      }
+      likelogo = document.createElement("img")
+      likelogo.setAttribute("id", `sd${id}`)
+      likelogo.setAttribute("class", "logo")
+      img.setAttribute("class", "size")
+      like.setAttribute("class", "likes")
+      img.src = image
+      par.innerText = para
+      likelogo.src = "https://img.icons8.com/windows/2x/like.png"
+
+      like.append(likelogo)
+      div1.append(img, like)
+      div.append(div1, par)
+      tourslide.append(div)
+    });
+
+
+  }
+  let i = 0;
+  let ChangeColour = (id,image,para) => {
+    let sd = document.getElementById(`sd${id}`)
+    console.log(id)
+    if (i % 2 == 1) {
+      sd.src = "https://img.icons8.com/windows/2x/like.png"
+      alert("Removed From the trip")
+      localStorage.setItem("data",JSON.stringify(null))
+    } else {
+      sd.src = "https://img.icons8.com/fluency/2x/like.png"
+      alert("Added to the trip")
+      let dat={
+        image,para
+      }
+      localStorage.setItem("data",JSON.stringify(dat))
+    }
+    i++;
+  }
+  let ri = document.getElementById("right")
+  ri.addEventListener("click", function () {
+    // location.href="#sd8"
+    tourslide.scrollLeft += 2000
+
+  })
+  let lef = document.getElementById("left")
+  lef.addEventListener("click", function () {
+    // window.location.href="#sd1"
+    tourslide.scrollLeft += -2000
+  })
+  let pune = [
+    {
+      id: 9,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5e/03/2d/caption.jpg?w=300&h=300&s=1",
+      para: "Private 2-Day Tour to The Taj Mahal and Agra with Both Side Commercial Flights"
+    },
+    {
+      id: 10,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/8e/b8/c8/caption.jpg?w=300&h=300&s=1",
+      para: "Immersive culture tour of Pune by private car with guide and local lunch"
+    },
+    {
+      id: 11,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/67/95/1a/caption.jpg?w=300&h=300&s=1",
+      para: "Private Agra Tour from Pune- All Inclusive"
+    },
+    {
+      id: 12,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/56/72/1b/caption.jpg?w=300&h=300&s=1",
+      para: "1-Day Trip to The Taj Mahal and Agra from Pune with Commercial Return Flights"
+    },
+    {
+      id: 13,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/28/d2/43/caption.jpg?w=300&h=300&s=1",
+      para: "Best of Pune Private City Tour with Lunch and Transport."
+    },
+    {
+      id: 14,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/52/68/9c/caption.jpg?w=300&h=300&s=1",
+      para: "2-Days Private Taj Mahal Agra Tour from Pune by Commercial Return Flights"
+    },
+    {
+      id: 15,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/60/1b/63/caption.jpg?w=300&h=300&s=1",
+      para: "Day Trip to The Taj Mahal and Agra from Pune with Both Side Commercial Flights."
+    },
+    {
+      id: 16,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/c4/23/90/caption.jpg?w=300&h=300&s=1",
+      para: "Day Trip to Mahabaleshwar-Panchgani (Guided Fullday Sightseeing Tour from Pune)"
+    },
+    {
+      id: 17,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/9e/d5/36/caption.jpg?w=300&h=300&s=1",
+      para: "Golden Triangle in 4 Days ex-Pune (Delhi-Agra-Jaipur): Private Luxury Tour"
+    },
+    {
+      id: 18,
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/63/60/30/caption.jpg?w=300&h=300&s=1",
+      para: "Singhagad-Panshet-Lavasa Trip (Guided Full Day Sightseeing Tour)"
+    },
+  ]
+  appends(pune, to)
+  let rs = document.getElementById("righti")
+  rs.addEventListener("click", function () {
+    // location.href="#sd8"
+    to.scrollLeft += 2000
+
+  })
+  let ls = document.getElementById("lefti")
+  ls.addEventListener("click", function () {
+    // window.location.href="#sd1"
+    to.scrollLeft += -2000
+  })
+  let destinations = [
+    {
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/6a/ff/2a/caption.jpg?w=300&h=300&s=1&cx=7014&cy=3760&chk=v1_14690e40614ca9b48b73",
+      para: "Dubai, United Arab Emirates"
+    },
+    {
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d2/2f/7a/palace-from-the-outside.jpg?w=300&h=300&s=1",
+      para: "Bengaluru, India"
+    },
+    {
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/80/d7/80/caption.jpg?w=300&h=300&s=1",
+      para: "Pune, India"
+    },
+    {
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/98/f7/df/charminar.jpg?w=300&h=300&s=1",
+      para: "Hyderabad, India"
+    },
+    {
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fe/ac/kolkata-calcutta.jpg?w=300&h=300&s=1",
+      para: "Kolkata (Calcutta), India"
+    },
+    {
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/00/d5/bf/visit-india-tours-sightseeing.jpg?w=300&h=300&s=1",
+      para: "Gurugram (Gurgaon), India"
+    },
+    {
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c0/b1/4b/caption.jpg?w=300&h=300&s=1",
+      para: "London, UK"
+    },
+    {
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/60/00/caption.jpg?w=300&h=300&s=1",
+      para: "Singapore, Singapore"
+    },
+    {
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/a3/3b/8a/screenshot-2017-09-12.jpg?w=300&h=-1&s=1",
+      para: "Jaipur, India"
+    },
+    {
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/46/b8/chennai-madras.jpg?w=300&h=300&s=1",
+      para: "Chennai (Madras), India"
+    }
+
+  ]
+  let de = document.getElementById("desti")
+  destinations.forEach(({ image, para }) => {
+    let div = document.createElement("div")
+    div.setAttribute("class", "fashion")
+
+    let div1 = document.createElement("div")
+    div1.setAttribute("class", "container")
+    let img = document.createElement("img")
+    img.setAttribute("class", "size")
+    let par = document.createElement("p")
+    par.setAttribute("class", "adjus")
+    img.src = image
+    par.innerText = para
+    div1.append(img, par)
+    div.append(div1)
+    de.append(div)
+  });
+  let rum = document.getElementById("rightis")
+  rum.addEventListener("click", function () {
+    de.scrollLeft += 2000
+
+  })
+  let lum = document.getElementById("leftis")
+  lum.addEventListener("click", function () {
+    de.scrollLeft += -2000
+  })
+ 
+ 
+</script>
