@@ -196,6 +196,44 @@
 #faq option{
     border: none;
 }
+#adv
+  {
+    width: 99%;
+    height: 250px;
+    display: flex;
+    border: 1px solid none;
+    margin-left: 15px;
+    margin-top:100px;
+  }
+  #adv1
+  {
+   width: 48%;
+   height: 250px;
+   border: 1px none;
+   background-color: #eafaf4;
+  }
+  #adv1
+  {
+    margin-left: 16px;
+  }
+  #adv1 button
+  {
+    padding: 15px 50px 15px 5px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+  }
+  #adv2
+  {
+    width: 48%;
+   height: 250px;
+  }
+  #adv2 img
+  {
+    width:105%;
+    height: 100%;
+  }
     
 </style>
 <body>
@@ -289,6 +327,16 @@
             </select>
             <hr>
                 </div>
+                <div id="adv">
+                    <div id="adv1">
+                        <h2>The both of you could user a trip</h2>
+                        <p>Plan  the holiday you deserve with our app</p>
+                        <button>Download the app</button>
+                    </div>
+                    <div id="adv2">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/43/a7/ce/caption.jpg?w=300&h=-1&s=1" alt="">
+                    </div>
+                </div>
 
 </body>
 </html>
@@ -345,6 +393,8 @@
         });
     }
     box4();
-   
-   
+   document.getElementById("btnseeall").addEventListener("click",btnseeall) 
+   function btnseeall(){
+    window.location.href="ranchisell.html";
+   }  
 </script>
