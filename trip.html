@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
     <style>
-         #main{
+         #mains{
             width: 90%;
             display: flex;
          }
@@ -44,7 +46,7 @@
 
     </div>
 
-    <div id="main">
+    <div id="mains">
         <div id="trip">
 
         </div>
@@ -68,10 +70,12 @@
             </div>
         </div>
     </div>
-    
+    <div id="footer">
+
+    </div>
 </body>
 </html>
-<script>
+<script src="trip.js" type="module">
     let da=JSON.parse(localStorage.getItem("data"))
     let tr=document.getElementById("trip")
     // console.log(da.image)
@@ -95,7 +99,7 @@
     //  https://api.openweathermap.org/data/2.5/weather?q=amravati&appid=954aa7967b84e674a850b1ba2b0d1e9b
     function Search() {
         let city = document.querySelector("#query").value;
-        url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=954aa7967b84e674a850b1ba2b0d1e9b`
+        url = `http://api.openweathermap.org/data/2.5/weather?q=nagpur&appid=954aa7967b84e674a850b1ba2b0d1e9b`
         fetch(url).then(function (res) {
             return res.json()
         }).then(function (res) {
