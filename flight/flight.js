@@ -78,3 +78,16 @@ ptag[1].addEventListener("click", ()=>{
 ptag[2].addEventListener("click",()=>{
     document.getElementById("checktick").style.display="none";
 })
+let jahaj_detail=document.getElementsByClassName("company");
+jahaj_detail[0].addEventListener("click",()=>{
+  window.location.href="./Indigo.html"
+})
+jahaj_detail[1].addEventListener("click",()=>{
+  window.location.href="./JetAirways.html"
+})
+jahaj_detail[2].addEventListener("click",()=>{
+  window.location.href="./SpiceJet.html"
+})
+jahaj_detail[3].addEventListener("click",()=>{
+  window.location.href="./AirIndiaExpress.html"
+})

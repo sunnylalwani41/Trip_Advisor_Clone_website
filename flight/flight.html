@@ -245,6 +245,44 @@
         font-size: 14px;
         font-weight: 400;
       }
+      #jahaj {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin: 10px 0px;
+      }
+      #jahaj > div > label {
+        display: flex;
+        align-items: center;
+        color: #333333;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+      }
+      .company > p {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+        color: #000000;
+        margin: 8px 0px;
+      }
+      .company > img {
+        width: 100%;
+      }
+      .company {
+        cursor: pointer;
+      }
+      section {
+        width: 90%;
+        margin: auto;
+      }
+      footer {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
     </style>
     <script
       src="https://kit.fontawesome.com/e99a9eb445.js"
@@ -288,7 +326,7 @@
               <option value="First Class">First Class</option>
             </select>
             <div>
-              <h4>1 adult (18-64)</h4>
+              <h4>2 adult (18-64)</h4>
               <div>
                 <i class="fa-solid fa-circle-minus"></i>
                 <i class="fa-solid fa-circle-plus"></i>
@@ -372,7 +410,31 @@
     </div>
     <section>
       <h2>Airline reviews</h2>
-      
+      <div id="jahaj">
+        <div class="company">
+          <img src="./index.jpg" alt="" />
+          <p>IndiGo</p>
+          <label> <img src="./r1.jpg" alt="" />8,200 reviews</label>
+        </div>
+        <div class="company">
+          <img src="./index-1.jpg" alt="" />
+          <p>Jet Airways [no longer operating]</p>
+          <label> <img src="./r1.jpg" alt="" />12,097 reviews</label>
+        </div>
+        <div class="company">
+          <img src="./sp.jpg" alt="" />
+          <p>SpiceJet</p>
+          <label> <img src="./r1.jpg" alt="" />5,690 reviews</label>
+        </div>
+        <div class="company">
+          <img
+            src="./air-india-express-1583753331-1600410197-1630216482-1631510660.jpg"
+            alt=""
+          />
+          <p>Air India Express</p>
+          <label> <img src="./r14.jpg" alt="" />443 reviews</label>
+        </div>
+      </div>
     </section>
     <footer>
       <h3 class="heading">Best Flight Deals</h3>
