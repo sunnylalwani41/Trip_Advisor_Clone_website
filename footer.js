@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 function footer() {
     return `<div id="main">
+=======
+function footer(){
+    return`<div id="main">
+>>>>>>> 75da330c623109cc18e41b37c67dc6a87753d8f8
     <div id="upper_left">
         <div id="left_one">
             <p>About Tripadvisor</p>
@@ -80,15 +85,22 @@ function footer() {
     </div>
 </div>`
 }
+<<<<<<< HEAD
 function navbar() {
     return ` <div id="logo"> 
     <a href="index.html"><img src="https://www.hotel-yearbook.com/picture/153007157.jpg" alt="logo" id="logo_comp"/></a>
+=======
+function navbar(){
+    return ` <div id="logo"> 
+    <a href="index.html"><img src="https://www.hotel-yearbook.com/picture/153007157.jpg" alt="logo"/></a>
+>>>>>>> 75da330c623109cc18e41b37c67dc6a87753d8f8
 </div> 
 <div id="input_tag">
      <input id="input_box" type="text"/>
 </div>
 <div id="Review">
      <img src="https://mpng.subpng.com/20180625/th/kisspng-computer-icons-writing-clip-art-scam-5b310754d7e896.2778623115299397968844.jpg" alt="review"/>
+<<<<<<< HEAD
      <p><a href="./Newfolder/basket.html">Review</a></p>
 </div>
 <div id="trips">
@@ -104,3 +116,20 @@ function navbar() {
 </div>`
 }
 export { navbar, footer } 
+=======
+     <p><a href="">Review</a></p>
+</div>
+<div id="trips">
+     <img src="https://cdn-icons-png.flaticon.com/512/2/2267.png" alt="trips"/>
+     <p><a href="trip.html">Trips</a></p>
+</div>
+<div id="alerts">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9_IK0n3lxxsEGO16HdOqnlqa_cKJQbDQdA&usqp=CAU" alt="alerts"/>
+     <p><a href="">Alerts</a></p>
+</div>
+<div id="signin">
+     <button><a href="">Sign in</a></button>
+</div>`
+}
+export {navbar,footer} 
+>>>>>>> 75da330c623109cc18e41b37c67dc6a87753d8f8
