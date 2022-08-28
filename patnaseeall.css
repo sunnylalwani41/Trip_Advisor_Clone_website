@@ -1,0 +1,366 @@
+#adv
+{
+  width: 99%;
+  height: 250px;
+  display: flex;
+  border: 1px solid none;
+  margin-left: 1px;
+  margin-top: 20px;
+}
+#adv1
+{
+ width: 48%;
+ height: 250px;
+ border: 1px none;
+ background-color: #eafaf4;
+}
+#adv1
+{
+  margin-left: 16px;
+}
+#adv1 button
+{
+  padding: 15px 50px 15px 5px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  margin-top: 40px;
+}
+#adv2
+{
+  width: 48%;
+ height: 250px;
+}
+#adv2 img
+{
+  width:105%;
+  height: 100%;
+}
+#head6
+{
+  width: 100%;
+  height: 70px;
+  border: 1px solid none;
+  margin-left: 10px;
+}
+#box16
+{
+  display: flex;
+  width: 98%;
+  height: 200px;
+  border: 1px solid none;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#main1
+{
+  width: 30%;
+  height: 200px;
+  border: 1px solid none;
+}
+#main1 img
+{
+  width: 100%;
+  height: 100%;
+}
+#main2
+{
+  width:70%;
+  
+  background-color: white;
+}
+#main2 h2 
+{
+  margin-left: 10px;
+}
+#main2 p
+{
+  margin-left: 10px;
+}
+#main
+{
+
+  width: 100%;
+
+}
+#footer{
+  border:1px solid none;
+  width:100%;
+  height:400px;
+  /* display:flex; */
+  background-color:rgb(250, 241, 237)
+}
+#footer #main{
+  display:flex;
+  border:1px solid none;
+  width:80%;
+  height:250px;
+  margin:15px auto auto auto;
+}
+#footer #upper_left{
+  display:flex;
+  /* border:1px solid teal; */
+  width:70%;
+  height:250px;
+  gap:40px;
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-size: 14px;
+}
+#footer #upper_right{
+  /* border:1px solid teal; */
+  width:30%;
+  height:250px;
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  /* margin-left: 10px; */
+}
+#footer #left_one{
+  margin-left: 10px;
+}
+#footer #lower{
+  display:flex;
+  /* border:1px solid teal; */
+  width:80%;
+  height:100px;
+  margin:20px auto auto auto;
+}
+#footer #lower_left{
+  width:60%;
+}
+#footer #lower_left_upper{
+  display:flex;
+  /* border:1px solid black; */
+  height:60px;
+}
+#footer #lower_left_lower{
+  display:flex;
+  /* border:1px solid black; */
+  height:35px;
+}
+#footer #lower_left_upper_left{
+  /* border:1px solid red; */
+  width:9%;
+  height:100%;
+}
+#footer #lower_left_upper_left>img{
+  width:100%;
+  height:100%;
+}
+#footer #lower_left_upper_right{
+  width:100%;
+}
+#footer #lower_left_upper_right_upper{
+  display:flex;
+  /* border:1px solid red; */
+  height:25px;
+  margin-left:10px;
+  font-size: 12px;
+  align-items: center;
+}
+#footer #lower_left_upper_right_lower{
+  display:flex;
+  gap:15px;
+  margin-left:10px;
+  /* border:1px solid red; */
+  height:30px;
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-size: 13px;
+  align-items: center;
+  text-decoration:underline;
+  cursor: pointer;
+}
+#footer #lower_left_lower{
+  /* border:1px solid red; */
+  display:flex;
+  font-size: 12px;
+  align-items: center;
+  /* gap:5px; */
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+}
+#footer #lower_right{
+  /* border:1px solid teal;  */
+  width:40%;
+}
+#footer #lower_right_upper{
+  /* border:1px solid red;  */
+  display:flex;
+  gap:30px;
+  
+}
+#footer #lower_right_upper>h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  border:1px solid rgb(138, 111, 111);
+}
+#footer #lower_right_upper>h3:nth-child(1){
+  display: flex;
+  margin-left:50px;
+  /* border:1px solid teal; */
+  width:140px;
+  height:30px;
+  background-color: white;
+  color:black;
+  border-radius: 10px;
+}
+#footer #lower_right_upper>h3:nth-child(2){
+  display: flex;
+  margin-left:30px;
+  /* border:1px solid teal; */
+  width:140px;
+  height:30px;
+  background-color: white;
+  color:black;
+  border-radius: 10px;
+}
+#footer #lower_right_lower{
+  display: flex;
+  /* border:1px solid red; */
+  width:5%;
+  margin-left: 250px;
+  gap:15px;
+}
+#footer #lower_right_lower>img{
+  width:100%;
+}
+
+  #navbar{
+      /* border: 1px solid red; */
+      display:flex;
+      width:100%;
+      height:80px;
+      justify-content: center;
+      align-items: center;
+  }
+  #navbar a{
+      color: black;
+      text-decoration:none;
+}
+  #navbar #logo{
+      /* border: 1px solid red; */
+      width:15%;
+      margin-left:20px; 
+  }
+  #navbar #logo>a>img{
+      display: flex;
+      /* border: 1px solid teal; */
+      width:100%;
+      height:70px;
+      margin:auto;
+  }
+  #navbar #input_tag{
+      display: flex;
+      /* border: 1px solid red; */
+      width:40%;
+      height:60px;
+      margin-left: 10px;
+      margin:auto;
+  }
+  #navbar #input_tag>input{
+      display: flex;
+      border: 1px solid black;
+      padding: 10px;
+      width:100%;
+      height:60%;
+      margin:auto;
+      border-radius:20px;
+  }
+  #navbar #Review{
+      /* border: 1px solid red; */
+      width:6%;
+      display:flex;
+      margin-left:20px; 
+  }
+  #navbar #Review>img{
+      display: flex;
+      /* border: 1px solid teal; */
+      width:25%;
+      margin:auto;
+  }
+  #navbar #Review>p{
+      display: flex;
+      /* border: 1px solid teal; */
+      font-family:"Trip Sans VF", "Trip Sans", Arial, sans-serif;
+      font-size: 16px;
+      margin-left:10px; 
+      margin:auto;
+  }
+  #navbar #trips{
+      /* border: 1px solid red; */
+      width:5%;
+      margin-left: 20px;
+      display:flex;
+  }
+  #navbar #trips>img{
+      display: flex;
+      /* border: 1px solid teal; */
+      width:25%;
+      margin:auto;
+  }
+  #navbar #trips>p{
+      display: flex;
+      font-family:"Trip Sans VF", "Trip Sans", Arial, sans-serif;
+      font-size: 16px;
+      /* border: 1px solid teal; */
+      margin:auto;
+  }
+  #navbar #alerts{
+      /* border: 1px solid red; */
+      width:5%;
+      margin-left: 20px;
+      display:flex;
+  }
+  #navbar #alerts>img{
+      display: flex;
+      /* border: 1px solid teal; */
+      width:25%;
+      margin:auto;
+  }
+  #navbar #alerts>p{
+      display: flex;
+      font-family:"Trip Sans VF", "Trip Sans", Arial, sans-serif;
+      font-size: 16px;
+      /* border: 1px solid teal; */
+      margin:auto;
+  }
+  #navbar #signin{
+      margin-right:20px;
+      margin-left: 20px;
+      width:8%;
+  }
+  #navbar #signin>button{
+      padding:12px;
+      font-size: 15px;
+      border-radius: 20px;
+      background-color: black;
+  }
+  #navbar #signin>button>a{
+      color:white;
+  }
+  #lower_navbar{
+    display:flex;
+    width:100%;
+    height:50px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    gap:10px;
+     justify-content: space-evenly; 
+    align-items: center;
+   }
+   #lower_navbar>p{
+       margin-left: 10px;
+       display:flex;
+       font-size:14px;
+       font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+   }
+   #lower_navbar>p:nth-child(1){
+       margin-left: 50px;
+   }
+   #lower_navbar>p:hover{
+       cursor: pointer;
+   }
+   a
+{
+    text-decoration: none;
+    color: black;
+}

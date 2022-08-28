@@ -82,7 +82,7 @@ function footer() {
 }
 function navbar() {
     return ` <div id="logo"> 
-    <a href="index.html"><img src="https://www.hotel-yearbook.com/picture/153007157.jpg" alt="logo" id="logo_comp"/></a>
+    <a href="./index.html"><img src="https://www.hotel-yearbook.com/picture/153007157.jpg" alt="logo" /></a>
 </div> 
 <div id="input_tag">
      <input id="input_box" type="text"/>
