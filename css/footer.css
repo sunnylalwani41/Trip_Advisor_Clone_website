@@ -22,7 +22,7 @@
     font-size: 14px;
 }
 #footer #upper_right{
-    /* border:1px solid teal; */
+    border:1px solid teal;
     width:30%;
     height:250px;
     font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
