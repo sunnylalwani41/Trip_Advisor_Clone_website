@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading
+    {
+        width: 100%;;
+        height: 100px;
+        background-color: white;
+
+        text-align: center;
+        margin-top: 20px;
+    }
+    #bigbox
+    {
+        width:89%;
+        margin-left: 150px;
+        border: 1px solid none;
+display: flex;
+        height: 3000px;
+        background-color: #f2f2f2;
+    }
+    #box1
+    {
+        width:30%;
+        height:1000px;
+        border: 1px solid red;
+    }
+    #box2
+    {
+        width:68%;
+        height:4700px;
+        border: 1px solid none;
+        margin-left: 20px;
+        
+    }
+    #head1
+    {
+        display: flex;
+
+        align-items: center;
+        margin-left: 10px;
+        border: 1px solid none;
+        
+    }
+    #head1 p
+    {
+        margin-left: 580px;
+    }
+    #box11
+    {
+        width:100%;
+        display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  gap: 5px;
+margin-left: 10px;
+border: 1px solid none;
+    }
+    #box11 div
+    {
+        background-color: white;
+        width:210px;
+        
+
+height:250px;
+  }
+  #box11 img{
+    width: 210px;
+    height: 170px;
+  }
+  #box11 p
+  {
+    margin-left: 2px;
+  }
+  #head2
+    {
+       
+        display: flex;
+
+        align-items: center;
+        margin-left: 10px;
+        border: 1px solid none;
+        
+    }
+    #head2 p
+    {
+        margin-left: 580px;
+    }
+    #box12
+    {
+        width:100%;
+        display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  gap: 5px;
+margin-left: 10px;
+border: 1px solid none;
+    }
+    #box12 div
+    {
+        background-color: white;
+        width:210px;
+        
+
+height:250px;
+  }
+  #box12 img{
+    width: 210px;
+    height: 170px;
+  }
+  #box12 p
+  {
+    margin-left: 2px;
+  }
+  #head3
+    {
+       
+        display: flex;
+
+        align-items: center;
+        margin-left: 10px;
+        border: 1px solid none;
+        
+    }
+    #head3 p
+    {
+        margin-left: 580px;
+    }
+    #box13
+    {
+        width:100%;
+        display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  gap: 5px;
+margin-left: 10px;
+border: 1px solid none;
+    }
+    #box13 div
+    {
+        background-color: white;
+        width:210px;
+        
+
+height:250px;
+  }
+  #box13 img{
+    width: 210px;
+    height: 170px;
+  }
+  #box13 p
+  {
+    margin-left: 2px;
+  }
+  #head4
+    {
+       
+        display: flex;
+
+        align-items: center;
+        margin-left: 10px;
+        border: 1px solid none;
+        
+    }
+    #head4 p
+    {
+        margin-left: 580px;
+    }
+    #box14
+    {
+        width:100%;
+        display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  gap: 5px;
+margin-left: 10px;
+border: 1px solid none;
+    }
+    #box14 div
+    {
+        background-color: white;
+        width:210px;
+        
+
+height:250px;
+  }
+  #box14 img{
+    width: 210px;
+    height: 170px;
+  }
+  #box14 p
+  {
+    margin-left: 2px;
+  }
+  #head5
+    {
+       
+        display: flex;
+
+        align-items: center;
+        margin-left: 10px;
+        border: 1px solid none;
+        
+    }
+    #head5 p
+    {
+        margin-left: 580px;
+    }
+    #box15
+    {
+        width:100%;
+        display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  gap: 5px;
+margin-left: 10px;
+border: 1px solid none;
+    }
+    #box15 div
+    {
+        background-color: white;
+        width:210px;
+        
+
+height:250px;
+  }
+  #box15 img{
+    width: 210px;
+    height: 170px;
+  }
+  #box15 p
+  {
+    margin-left: 2px;
+  }
+  #adv
+  {
+    width: 99%;
+    height: 250px;
+    display: flex;
+    border: 1px solid none;
+    margin-left: 1px;
+    margin-top: 20px;
+  }
+  #adv1
+  {
+   width: 48%;
+   height: 250px;
+   border: 1px none;
+   background-color: #eafaf4;
+  }
+  #adv1
+  {
+    margin-left: 16px;
+  }
+  #adv1 button
+  {
+    padding: 15px 50px 15px 5px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+  }
+  #adv2
+  {
+    width: 48%;
+   height: 250px;
+  }
+  #adv2 img
+  {
+    width:105%;
+    height: 100%;
+  }
+  #head6
+  {
+    width: 100%;
+    height: 70px;
+    border: 1px solid none;
+    margin-left: 10px;
+  }
+  #box16
+  {
+    display: flex;
+    width: 98%;
+    height: 200px;
+    border: 1px solid none;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  #main1
+  {
+    width: 30%;
+    height: 200px;
+    border: 1px solid none;
+  }
+  #main1 img
+  {
+    width: 100%;
+    height: 100%;
+  }
+  #main2
+  {
+    width:70%;
+    
+    background-color: white;
+  }
+  #main2 h2 
+  {
+    margin-left: 10px;
+  }
+  #main2 p
+  {
+    margin-left: 10px;
+  }
+  #main
+  {
+
+    width: 100%;
+
+  }
+</style>
+<body>
+    <div id="heading">
+        <h1>Restaurants in Patna</h1>
+    </div>
+    <div id="bigbox">
+        <div id="box1"></div>
+        <div id="box2">
+            <div id="head1">
+                <h1>Delivery Available</h1>
+                <p>see all</p>
+              
+            </div>
+            <div id="box11"></div>
+            <div id="head2">
+                <h1>Delivery Available</h1>
+                <p>see all</p>
+              
+            </div>
+            <div id="box12"></div>
+            <div id="adv">
+                <div id="adv1">
+                    <h2>The both of you could user a trip</h2>
+                    <p>Plan  the holiday you deserve with our app</p>
+                    <button>Download the app</button>
+                </div>
+                <div id="adv2">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/43/a7/ce/caption.jpg?w=300&h=-1&s=1" alt="">
+                </div>
+            </div>
+            <div id="head3">
+                <h1>Delivery Available</h1>
+                <p>see all</p>
+              
+            </div>
+            <div id="box13"></div>
+            <div id="head4">
+                <h1>Delivery Available</h1>
+                <p>see all</p>
+              
+            </div>
+            <div id="box14"></div>
+            <div id="head5">
+                <h1>Delivery Available</h1>
+                <p>see all</p>
+              
+            </div>
+            <div id="box15"></div>
+            <div id="head6">
+                <h1>Top Restaurants in Patna</h1>
+                </div>
+                <div id="box16">
+                    <div id="main1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-p/11/db/a1/26/photo4jpg.jpg" alt="">
+                    </div>
+                    <div id="main2">
+                        <h2>1.Bansi Vihar</h2>
+                        <p>Indian Asian $$-$$</p>
+                        <hr id="main">
+                        <p>"Khana time"</p>
+                        <p>"South Indian"</p>
+                    </div>
+                </div>
+                <div id="box16">
+                    <div id="main1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/c1/28/09/resturants.jpg" alt="">
+                    </div>
+                    <div id="main2">
+                        <h2>2.Gandhali Restaurants</h2>
+                        <p>Indian,chinese,indian $$-$$</p>
+                        <hr id="main">
+                        <p>"Best workers and best palace.Thank to grand managemnet mt."</p>
+                        <p>"Thank you Mr Ashutosh and Zakir for marking our anniversary memorable with you.."</p>
+                    </div>
+                </div>
+                <div id="box16">
+                    <div id="main1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-p/11/db/a1/26/photo4jpg.jpg" alt="">
+                    </div>
+                    <div id="main2">
+                        <h2>1.Bansi Vihar</h2>
+                        <p>Indian Asian $$-$$</p>
+                        <hr id="main">
+                        <p>"Khana time"</p>
+                        <p>"South Indian"</p>
+                    </div>
+                </div>
+                <div id="box16">
+                    <div id="main1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-p/11/db/a1/26/photo4jpg.jpg" alt="">
+                    </div>
+                    <div id="main2">
+                        <h2>1.Bansi Vihar</h2>
+                        <p>Indian Asian $$-$$</p>
+                        <hr id="main">
+                        <p>"Khana time"</p>
+                        <p>"South Indian"</p>
+                    </div>
+                </div>
+                <div id="adv">
+                    <div id="adv1">
+                        <h2>The both of you could user a trip</h2>
+                        <p>Plan  the holiday you deserve with our app</p>
+                        <button>Download the app</button>
+                    </div>
+                    <div id="adv2">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/43/a7/ce/caption.jpg?w=300&h=-1&s=1" alt="">
+                    </div>
+                </div>
+                <div id="box16">
+                    <div id="main1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-p/11/db/a1/26/photo4jpg.jpg" alt="">
+                    </div>
+                    <div id="main2">
+                        <h2>1.Bansi Vihar</h2>
+                        <p>Indian Asian $$-$$</p>
+                        <hr id="main">
+                        <p>"Khana time"</p>
+                        <p>"South Indian"</p>
+                    </div>
+                </div>
+                <div id="box16">
+                    <div id="main1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-p/11/db/a1/26/photo4jpg.jpg" alt="">
+                    </div>
+                    <div id="main2">
+                        <h2>1.Bansi Vihar</h2>
+                        <p>Indian Asian $$-$$</p>
+                        <hr id="main">
+                        <p>"Khana time"</p>
+                        <p>"South Indian"</p>
+                    </div>
+                </div>
+                <div id="box16">
+                    <div id="main1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-p/11/db/a1/26/photo4jpg.jpg" alt="">
+                    </div>
+                    <div id="main2">
+                        <h2>1.Bansi Vihar</h2>
+                        <p>Indian Asian $$-$$</p>
+                        <hr id="main">
+                        <p>"Khana time"</p>
+                        <p>"South Indian"</p>
+                    </div>
+                </div>
+                <div id="box16">
+                    <div id="main1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-p/11/db/a1/26/photo4jpg.jpg" alt="">
+                    </div>
+                    <div id="main2">
+                        <h2>1.Bansi Vihar</h2>
+                        <p>Indian Asian $$-$$</p>
+                        <hr id="main">
+                        <p>"Khana time"</p>
+                        <p>"South Indian"</p>
+                    </div>
+                </div>
+                <div id="adv">
+                    <div id="adv1">
+                        <h2>The both of you could user a trip</h2>
+                        <p>Plan  the holiday you deserve with our app</p>
+                        <button>Download the app</button>
+                    </div>
+                    <div id="adv2">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/43/a7/ce/caption.jpg?w=300&h=-1&s=1" alt="">
+                    </div>
+                </div>
+                <div id="box16">
+                    <div id="main1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-p/11/db/a1/26/photo4jpg.jpg" alt="">
+                    </div>
+                    <div id="main2">
+                        <h2>1.Bansi Vihar</h2>
+                        <p>Indian Asian $$-$$</p>
+                        <hr id="main">
+                        <p>"Khana time"</p>
+                        <p>"South Indian"</p>
+                    </div>
+                </div>
+                <div id="box16">
+                    <div id="main1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-p/11/db/a1/26/photo4jpg.jpg" alt="">
+                    </div>
+                    <div id="main2">
+                        <h2>1.Bansi Vihar</h2>
+                        <p>Indian Asian $$-$$</p>
+                        <hr id="main">
+                        <p>"Khana time"</p>
+                        <p>"South Indian"</p>
+                    </div>
+                </div>
+            
+        </div>
+        
+    </div>
+    
+    </div>
+    
+</body>
+</html>
+<script>
+    let box11=async()=>
+    {
+     const url=`https://damp-garden-07205.herokuapp.com/api/resturentinpatana`;
+     let res=await fetch(url);
+     let data=await res.json();
+     //console.log(data);
+     kuku(data);
+     
+    }
+   
+      let kuku =(data)=>
+      {
+       // console.log(data);
+        let container=document.getElementById("box11");
+      data.forEach(function (element){
+  console.log(element.image)
+  let div=document.createElement("div")
+  let img=document.createElement("img");
+  img.src=element.image;
+  let name=document.createElement("p");
+  name.innerText=element.name;
+  let price=document.createElement("p");
+  price.innerText=element.price;
+  div.append(img,name,price);
+   container.append(div);
+      });
+      }
+    box11();
+    let box12=async()=>
+    {
+     const url=`https://damp-garden-07205.herokuapp.com/api/resturentinpatana`;
+     let res=await fetch(url);
+     let data=await res.json();
+     //console.log(data);
+     kuku1(data);
+     
+    }
+   
+      let kuku1 =(data)=>
+      {
+       // console.log(data);
+        let container=document.getElementById("box12");
+      data.forEach(function (element){
+  console.log(element.image)
+  let div=document.createElement("div")
+  let img=document.createElement("img");
+  img.src=element.image;
+  let name=document.createElement("p");
+  name.innerText=element.name;
+  let price=document.createElement("p");
+  price.innerText=element.price;
+  div.append(img,name,price);
+   container.append(div);
+      });
+      }
+    box12();
+    let box13=async()=>
+    {
+     const url=`https://damp-garden-07205.herokuapp.com/api/resturentinpatana`;
+     let res=await fetch(url);
+     let data=await res.json();
+     //console.log(data);
+     kuku2(data);
+     
+    }
+   
+      let kuku2 =(data)=>
+      {
+       // console.log(data);
+        let container=document.getElementById("box13");
+      data.forEach(function (element){
+  console.log(element.image)
+  let div=document.createElement("div")
+  let img=document.createElement("img");
+  img.src=element.image;
+  let name=document.createElement("p");
+  name.innerText=element.name;
+  let price=document.createElement("p");
+  price.innerText=element.price;
+  div.append(img,name,price);
+   container.append(div);
+      });
+      }
+    box13();
+    let box14=async()=>
+    {
+     const url=`https://damp-garden-07205.herokuapp.com/api/resturentinpatana`;
+     let res=await fetch(url);
+     let data=await res.json();
+     //console.log(data);
+     kuku3(data);
+     
+    }
+   
+      let kuku3 =(data)=>
+      {
+       // console.log(data);
+        let container=document.getElementById("box14");
+      data.forEach(function (element){
+  console.log(element.image)
+  let div=document.createElement("div")
+  let img=document.createElement("img");
+  img.src=element.image;
+  let name=document.createElement("p");
+  name.innerText=element.name;
+  let price=document.createElement("p");
+  price.innerText=element.price;
+  div.append(img,name,price);
+   container.append(div);
+      });
+      }
+    box14();
+    let box15=async()=>
+    {
+     const url=`https://damp-garden-07205.herokuapp.com/api/resturentinpatana`;
+     let res=await fetch(url);
+     let data=await res.json();
+     //console.log(data);
+     kuku4(data);
+     
+    }
+   
+      let kuku4 =(data)=>
+      {
+       // console.log(data);
+        let container=document.getElementById("box15");
+      data.forEach(function (element){
+  console.log(element.image)
+  let div=document.createElement("div")
+  let img=document.createElement("img");
+  img.src=element.image;
+  let name=document.createElement("p");
+  name.innerText=element.name;
+  let price=document.createElement("p");
+  price.innerText=element.price;
+  div.append(img,name,price);
+   container.append(div);
+      });
+      }
+    box15();
+</script>

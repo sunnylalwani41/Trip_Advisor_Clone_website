@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main
+    {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+    }
+    #search
+    {
+        width: 1000px;
+        height: 400px;
+        border: 1px solid none;
+        margin: 100px 300px 200px 500px;
+        
+    }
+    #query
+    {
+        padding: 20px 400px 20px 10px;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 3px solid black;
+     }
+     #btn
+     {
+        padding: 20px 20px 20px 10px;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 3px solid black; 
+        background-color: white;
+        cursor: pointer;
+        
+     }
+     #btn img
+     {
+        width: 20px;
+        height: 20px;
+     }
+
+</style>
+<body>
+    <div id="main">
+    <div id="search">
+        <button id="btn" onclick="btn()"><img src="https://img.icons8.com/ios-filled/72/search--v1.png" alt=""></button>
+      <input type="text" id="query" placeholder="Where to ?">
+    </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    let btn=()=>
+    {
+        let query=document.getElementById("query").value;
+        console.log(query);
+        if(query==="patna" ||query==="Patna" || query==="PATNA")
+        {
+        window.location.href="patna.html";
+        }
+        if(query==="ranchi" ||query==="Ranchi" || query==="RANCHI")
+        {
+            window.location.href="ranchi.html";   
+        }
+        if(query!=="patna"  && query!=="Patna" && query!=="PATNA" && query!=="ranchi" && query!=="Ranchi" && query!=="RANCHI")
+        {
+            alert("only serach patna and ranchi");
+        }
+    }
+    
+    
+</script>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #head1
+    {
+        margin-left: 70px;
+    }
+    #box1
+    {
+        position: relative;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+        gap:5px;
+        margin-left: 70px;
+
+    }
+    #box1 div
+
+    {
+        width:280px;
+        height: 300px;
+    }
+    #box1 img{
+        width:280px;
+        height: 300px;
+        color: black;
+    }
+    #write1
+    {
+        position: absolute;
+  top: 160px;
+  left: 16px;
+  color:white;
+    }
+    #write2
+    {
+        position: absolute;
+  top: 220px;
+  left: 290px;
+ color: white
+    }
+    #write3
+    {
+        position: absolute;
+  top: 160px;
+  left: 580px;
+  color: white;
+    }
+    #write4
+    {
+        position: absolute;
+  top: 180px;
+  left: 870px;
+  color: white;
+    }
+    #write5
+    {
+        position: absolute;
+  top: 170px;
+  left: 1150px;
+  color:white;
+    }
+    hr
+    {
+        width: 94%;
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+    #head2
+    {
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+    #box2
+    {
+        position: relative;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+        gap:5px;
+        margin-left: 70px;
+        margin-top: 30px;
+
+    }
+    #box2 div
+
+    {
+        width:280px;
+        height: 430px;
+    }
+    #box2 img{
+        width:280px;
+        height: 300px;
+        color: black;
+    }
+    #head3
+    {
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+    #box3
+    {
+        position: relative;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+        gap:5px;
+        margin-left: 70px;
+        margin-top: 30px;
+
+    }
+    #box3 div
+
+    {
+        width:280px;
+        height: 430px;
+    }
+    #box3 img{
+        width:280px;
+        height: 300px;
+        color: black;
+    }
+    #head4
+    {
+        margin-top: 20px;
+        text-align: center;
+    }
+    #box4
+    {
+        position: relative;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap:5px;
+        margin-left: 70px;
+        margin-top: 30px;
+
+    }
+    #box4 div
+
+    {
+        width:380px;
+        height: 530px;
+    }
+    #box4 img{
+        width:380px;
+        height: 400px;
+        color: black;
+    }
+    #seeall
+    {
+        width: 100%;
+        height: 100px
+    }
+ #btnseeall
+ {
+    margin-left: 700px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid;
+    color: white;
+    background-color: black;
+
+ }
+
+    
+</style>
+<body>
+ <div id="head1">
+    <h1>Places to Visit in Patna</h1>
+    <h4>Popular things to do
+    </h4>
+ </div>
+    <div id="box1">
+        <div id="write1">
+<h1>
+    Private <br>
+    Sightseening <br>
+    Tours
+</h1>
+        </div>
+        <div id="write2">
+            <h1>
+                Top Pickes
+            </h1>
+        </div>
+        <div id="write3">
+            <h1>Sacred & <br>
+            Religious <br>
+        Sites</h1>
+        </div>
+        <div id="write4">
+            <h1>
+                Tours & <br>
+                Sightseening
+            </h1>
+        </div>
+        <div id="write5">
+            <h1>Multi-day& <br>
+            Extended <br>
+        Tours</h1>
+        </div>
+    </div>
+    <hr>
+    <div id="head2">
+        <h1>
+            Ways to tour Patna
+
+
+        </h1>
+        <h4>
+            Book these experiences for a close-up look at Patna.
+        </h4>
+    </div>
+    <div id="box2"></div>
+    <hr>
+    <div id="head3">
+        <h1>  Recommended for You</h1>
+       
+        <h4>Tours and activities tailored to your interests.</h4>
+    </div>
+    <div id="box3"></div>
+    <hr>
+    <div id="head4">
+        <h1>
+            Top Attractions in Patna
+
+        </h1>
+        </div>
+        <div id="box4"></div>
+        <div id="seeall">
+            <button id="btnseeall">see all</button>
+        </div>
+        <hr>
+
+
+</body>
+</html>
+<script>
+    let box1=async()=>
+    {
+        const url=`https://damp-garden-07205.herokuapp.com/api/placestopatna`;
+        let res=await fetch(url);
+        let data=await res.json();
+       // console.log(data);
+        kuku1(data);
+    }
+    let kuku1=(data)=>
+    {
+        let container=document.getElementById("box1");
+        data.forEach(element => {
+            console.log(element);
+            let div=document.createElement("div");
+            let img=document.createElement("img");
+           
+            img.src=element.image;
+            
+            div.append(img);
+            container.append(div);
+        });
+    }
+    box1();
+    let box2=async()=>
+    {
+        const url=`https://damp-garden-07205.herokuapp.com/api/waytopatna`;
+        let res=await fetch(url);
+        let data=await res.json();
+       // console.log(data);
+        kuku2(data);
+    }
+    let kuku2=(data)=>
+    {
+        let container=document.getElementById("box2");
+        data.forEach(element => {
+            console.log(element);
+            let div=document.createElement("div");
+            let img=document.createElement("img");
+            img.src=element.image;
+            let name=document.createElement("h3");
+            name.innerText=element.name;
+            let data=document.createElement("p");
+            data.innerText=element.data;
+            let des=document.createElement("p");
+            des.innerText=element.des;
+            div.append(img,name,data,des);
+            container.append(div);
+        });
+    }
+    box2();
+    let box3=async()=>
+    {
+        const url=`https://damp-garden-07205.herokuapp.com/api/waytopatna`;
+        let res=await fetch(url);
+        let data=await res.json();
+       // console.log(data);
+        kuku3(data);
+    }
+    let kuku3=(data)=>
+    {
+        let container=document.getElementById("box3");
+        data.forEach(element => {
+            console.log(element);
+            let div=document.createElement("div");
+            let img=document.createElement("img");
+            img.src=element.image;
+            let name=document.createElement("h3");
+            name.innerText=element.name;
+            let data=document.createElement("p");
+            data.innerText=element.data;
+            let des=document.createElement("p");
+            des.innerText=element.des;
+            div.append(img,name,data,des);
+            container.append(div);
+        });
+    }
+    box3();
+    let box4=async()=>
+    {
+        const url=`https://damp-garden-07205.herokuapp.com/api/attractioninpatan`;
+        let res=await fetch(url);
+        let data=await res.json();
+       // console.log(data);
+        kuku4(data);
+    }
+    let kuku4=(data)=>
+    {
+        let container=document.getElementById("box4");
+        data.forEach(element => {
+            console.log(element);
+            let div=document.createElement("div");
+            let img=document.createElement("img");
+            img.src=element.image;
+            let name=document.createElement("h3");
+            name.innerText=element.name;
+            let place=document.createElement("p");
+            place.innerText=element.place;
+            
+            let des=document.createElement("p");
+            des.innerText=element.des;
+            div.append(img,name,place,des);
+            container.append(div);
+        });
+    }
+    box4();
+   
+   
+</script>
