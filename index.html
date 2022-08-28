@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <style>
+      h4 {
+        font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+        /* Font being Rendered:Trip Sans VF100.0% (remote) */
+        font-size: 24px;
+      }
+
+      p {
+        font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+        /* Font being Rendered:Trip Sans VF100.0% (remote) */
+        font-size: 15px;
+      }
+
+      #layout {
+        display: flex;
+        width: 85%;
+        height: auto;
+        margin: auto;
+        /* border:1px solid red; */
+      }
+
+      .form {
+        display: flex;
+        width: 15%;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .form:hover {
+        background-color: teal;
+        cursor: pointer;
+        color: white;
+      }
+
+      .adj {
+        width: 30px;
+        height: 30px;
+        /* background-color: white; */
+      }
+
+      #search {
+        width: 84%;
+        margin: auto;
+        margin-top: 30px;
+      }
+
+      .tour {
+        width: 84%;
+        margin: auto;
+      }
+
+      /* #tour_slide{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        padding: 1px;
+        overflow-x:hidden ;
+        transition: 2s;
+        scroll-behavior: smooth;
+      }
+      #to_slide{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        padding: 1px;
+        overflow-x:hidden ;
+        transition: 2s;
+        scroll-behavior: smooth;
+      } */
+      .equal {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        padding: 1px;
+        overflow-x: hidden;
+        transition: 2s;
+        scroll-behavior: smooth;
+        /* overflow:scroll ; */
+      }
+
+      .equals {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        padding: 1px;
+        overflow-x: hidden;
+        transition: 2s;
+        scroll-behavior: smooth;
+        /* overflow:scroll ; */
+      }
+
+      .size {
+        width: 273px;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .likes {
+        width: 35px;
+        height: 35px;
+        border: none;
+        position: absolute;
+        top: 10%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: white;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+
+      .logo {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+      }
+
+      .fashion:hover {
+        cursor: pointer;
+      }
+
+      .le {
+        width: 30px;
+        height: 30px;
+        /* margin-top: 10px; */
+        background-color: white;
+        border-radius: 20px;
+        border: 2px solid black;
+      }
+
+      /* .le:hover{
+        
+      } */
+      .lefts {
+        background-color: transparent;
+        border: none;
+        margin: -100px 0px 0px 0px;
+      }
+      .for_slider {
+        width: 108%;
+        display: flex;
+        margin-left: -30px;
+      }
+
+      #get_out {
+        width: 84%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #faf1ed;
+        margin: 0px 0px 0px 120px;
+      }
+
+      #getImage {
+        width: 450px;
+        height: 200px;
+        margin-right: -70px;
+      }
+
+      #gbsee > button {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        border-radius: 20px;
+      }
+
+      .adjus {
+        margin-top: 0px;
+      }
+      #png {
+        margin-top: 30px;
+      }
+      @media all and (min-width: 768px) and (max-width: 1200px) {
+        /* #layout {
+      display: flex;
+      width: 85%;
+      height: 200px; */
+        /* margin: 150px; */
+        /* border:1px solid red; */
+        /* }  */
+        #search {
+          width: 90%;
+          /* margin: auto; */
+          margin-top: 30px;
+        }
+
+        .tour {
+          width: 100%;
+          margin: auto;
+        }
+        .equal {
+          width: 100%;
+          display: flex;
+          gap: 10px;
+          padding: 1px;
+          overflow-x: hidden;
+          transition: 2s;
+          scroll-behavior: smooth;
+          /* overflow:scroll ; */
+        }
+      }
+
+      @media all and (max-width: 768px) {
+        /* #layout {
+      display: flex;
+      width: 70%;
+      height: 100px;
+      margin: 100px;
+      border:1px solid red;
+    } */
+        /* .form {
+      display: flex;
+      width: 10%;
+      border: 1px solid black;
+      border-radius: 7px;
+      margin: auto;
+      justify-content: space-around;
+      align-items: center;
+
+    } */
+        #search {
+          width: 40%;
+          /* margin: auto; */
+          margin-top: 30px;
+        }
+      }
+      @media all and (max-width: 480px) {
+        /* #layout {
+      display: flex;
+      width: 30%;
+      height: auto;
+      margin: auto;
+      border:1px solid red;
+    } */
+        #search {
+          width: 30%;
+          margin: auto;
+          margin-top: 30px;
+        }
+      }
+      a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+      }
+    </style>
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!-- <div id="logo"> 
+      <a href=""><img src="https://www.hotel-yearbook.com/picture/153007157.jpg" alt="logo"/></a>
+ </div> 
+ <div id="input_tag">
+       <input id="input_box" type="text"/>
+ </div>
+ <div id="Review">
+       <img src="https://mpng.subpng.com/20180625/th/kisspng-computer-icons-writing-clip-art-scam-5b310754d7e896.2778623115299397968844.jpg" alt="review"/>
+       <p><a href="">Review</a></p>
+ </div>
+ <div id="trips">
+       <img src="https://cdn-icons-png.flaticon.com/512/2/2267.png" alt="trips"/>
+       <p><a href="">Trips</a></p>
+ </div>
+ <div id="alerts">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9_IK0n3lxxsEGO16HdOqnlqa_cKJQbDQdA&usqp=CAU" alt="alerts"/>
+       <p><a href="">Alerts</a></p>
+ </div>
+ <div id="signin">
+       <button><a href="">Sign in</a></button>
+ </div> -->
+    </div>
+    <div id="layout">
+      <div id="f1" class="form">
+        <a href="">
+          <p>Hotels</p>
+          <img
+            class="adj"
+            src="https://img.icons8.com/material-outlined/344/bed.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="form">
+        <a href="./fp04_424/Holiday Home/holidayHome.html">
+          <p>Holiday Homes</p>
+          <img
+            class="adj"
+            src="https://img.icons8.com/material-outlined/344/real-estate.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="form">
+        <a href="">
+          <p>Things to Do</p>
+          <img
+            class="adj"
+            src="https://img.icons8.com/material-outlined/344/overview-pages-3.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="form">
+        <a href="">
+          <p>Restaurants</p>
+          <img
+            class="adj"
+            src="https://img.icons8.com/glyph-neue/2x/restaurant.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="form">
+        <a href="">
+          <p>Travel Forums</p>
+          <img
+            class="adj"
+            src="https://img.icons8.com/external-outline-berkahicon/2x/external-Forum-online-learning-outline-berkahicon.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="form">
+        <a href="">
+          <p>More</p>
+          <img
+            class="adj"
+            src="https://img.icons8.com/ios-glyphs/2x/more.png"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+    <div id="search">
+      <img
+        src="https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans.webp"
+        alt=""
+      />
+    </div>
+    <!--                         -->
+    <div class="tour">
+      <h4>You might like these</h4>
+      <p>More places to stay in Pune</p>
+      <div class="for_slider">
+        <button class="lefts" id="left">
+          <img
+            class="le"
+            src="https://img.icons8.com/windows/2x/long-arrow-left.png"
+            alt=""
+          />
+        </button>
+        <div class="equal" id="tour_slide"></div>
+        <button class="lefts" id="right">
+          <img
+            class="le"
+            src="https://img.icons8.com/fluency-systems-filled/2x/long-arrow-right.png"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+    <div id="get_out">
+      <div id="gbsee">
+        <h4>Get out there</h4>
+        <p>
+          Best of the Best tours, attractions & activities you won't want to
+          miss.
+        </p>
+        <button>See the list</button>
+      </div>
+      <div id="trachoice">
+        <img
+          id="getImage"
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/f7/1d/4d/caption.jpg?w=1000&h=-1&s=1"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="tour">
+      <h4>Ways to tour Pune</h4>
+      <p>Book these experiences for a close-up look at Pune.</p>
+      <div class="for_slider">
+        <button class="lefts" id="lefti">
+          <img
+            class="le"
+            src="https://img.icons8.com/windows/2x/long-arrow-left.png"
+            alt=""
+          />
+        </button>
+        <div class="equal" id="to_slide"></div>
+        <button class="lefts" id="righti">
+          <img
+            class="le"
+            src="https://img.icons8.com/fluency-systems-filled/2x/long-arrow-right.png"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+    <!--                    -->
+    <div class="tour">
+      <h4>Top destinations for your next holiday</h4>
+      <div class="for_slider">
+        <button class="lefts" id="leftis">
+          <img
+            class="le"
+            src="https://img.icons8.com/windows/2x/long-arrow-left.png"
+            alt=""
+          />
+        </button>
+        <div class="equals" id="desti"></div>
+        <button class="lefts" id="rightis">
+          <img
+            class="le"
+            src="https://img.icons8.com/fluency-systems-filled/2x/long-arrow-right.png"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+    <!--  -->
+    <div id="png">
+      <img src="/day3/Image20220826182113.png" alt="" />
+    </div>
+    <!--  -->
+
+    <div id="footer"></div>
+  </body>
+</html>
+<script src="index.js" type="module"></script>
