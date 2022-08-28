@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+         #mains{
+            width: 90%;
+            display: flex;
+         }
+         #trip{
+            width: 100%;
+            /* align-items:center;
+            justify-content: center; */
+            text-align: center;
+            /* margin: auto;     */
+         }
+         
+         #map{
+            width: 100%;
+         }
+    </style>
+     <style>
+        .mapouter {
+            position: relative;
+            text-align: right;
+            height:800px;
+            width: 800px;
+        }
+    </style>
+    <style>
+        .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 700px;
+            width: 900px;
+        }
+    </style>
+    <title>trip</title>
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+
+    <div id="mains">
+        <div id="trip">
+
+        </div>
+        <div onload="getLocation()" id="map">
+            <!-- <input type="text" id="query" placeholder="Enter City Name"> -->
+            <!-- <button onclick="Search()">Search</button> -->
+            <div id="container"></div>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe 
+                    width="1000" 
+                    height="600" 
+                    id="gmap_canvas"       
+                    frameborder="0"
+                    scrolling="no" 
+                    marginheight="0" 
+                    marginwidth="0">
+                </iframe><br>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+</html>
+<script src="trip.js" type="module">
+    let da=JSON.parse(localStorage.getItem("data"))
+    let tr=document.getElementById("trip")
+    // console.log(da.image)
+        let img=document.createElement("img")
+        let h3=document.createElement("h3")
+        let p=document.createElement("p")
+        let rate=document.createElement("h5")
+        let type=document.createElement("h4")
+        type.innerText= "Type: Restaurant $$$$ Indian Asian"
+        rate.innerText=`Rating:3.5/5`
+        p.innerText="location: Nagpur, India"
+        img.src=da.image
+        h3.innerText=da.para
+        tr.append(img,h3,p,rate,type)
+
+
+
+// location
+
+ // src=`https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed`
+    //  https://api.openweathermap.org/data/2.5/weather?q=amravati&appid=954aa7967b84e674a850b1ba2b0d1e9b
+    function Search() {
+        let city = document.querySelector("#query").value;
+        url = `http://api.openweathermap.org/data/2.5/weather?q=nagpur&appid=954aa7967b84e674a850b1ba2b0d1e9b`
+        fetch(url).then(function (res) {
+            return res.json()
+        }).then(function (res) {
+            console.log(res)
+            append(res)
+            city.innerText = ""
+        })
+    }
+    function append(data) {
+        // let city=document.querySelector("#query").value;
+        // city.innerHTML=null
+        let url=`https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed`
+        let container = document.querySelector("#container");
+        container.innerHTML = null
+        let h2 = document.createElement("h2")
+        h2.innerText = data.name
+        let temp = document.createElement("p")
+        temp.innerText = `Temp:-${data.main.temp}`;
+        let min_temp = document.createElement("p")
+        min_temp.innerText = `Temp:-${data.main.temp_min}`;
+        let max_temp = document.createElement("p")
+        max_temp.innerText = `Temp:-${data.main.temp_max}`;
+       
+        // container.append(h2, temp, min_temp, max_temp)
+        let iframe=document.querySelector("#gmap_canvas");
+        iframe.src=url;
+
+
+    }
+    function getLocation(){
+        navigator.geolocation.getCurrentPosition(success);
+         function success(pos) {
+            const crd = pos.coords;
+
+            console.log('Your current position is:');
+            console.log(`Latitude : ${crd.latitude}`);
+            console.log(`Longitude: ${crd.longitude}`);
+            console.log(`More or less ${crd.accuracy} meters.`);
+            getWeatherOnLocation(crd.latitude,crd.longitude)
+            }
+            
+    }
+    getLocation()
+    function getWeatherOnLocation(lat,lon){
+        let url=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=954aa7967b84e674a850b1ba2b0d1e9b`
+
+        fetch(url)
+        .then(function (res) {
+            return res.json()
+        }).then(function (res) {
+            console.log(res)
+            append(res)
+            city.innerText = ""
+        })
+    }
+</script>

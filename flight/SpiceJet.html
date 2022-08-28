@@ -1,51 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Footer</title>
-    <link rel="stylesheet" href="../css/footer.css" />
+    <title>SpiceJet reviews Reviews and Flights- Trip Advisor</title>
+    <link rel="stylesheet" href="./airline.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/e99a9eb445.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../myCss/navbar.css" />
+    <link rel="stylesheet" href="../myCss/lowernavbar.css" />
+    <link rel="stylesheet" href="../myCss/footer.css" />
   </head>
   <body>
-    <div id="footer">
-      <div id="main">
-        <div id="upper_left">
-          <div id="left_one">
-            <p>About Tripadvisor</p>
-            <p>About Us</p>
-            <p>Press</p>
-            <p>Resources and Policies</p>
-            <p>Careers</p>
-            <p>Trust & Safety</p>
-            <p>Contact us</p>
-          </div>
-          <div id="left_two">
-            <p>Explore</p>
-            <p>Write a review</p>
-            <p>Add a Place</p>
-            <p>Join</p>
-            <p>Travellers' Choice</p>
-            <p>GreenLeaders</p>
-            <p>Help Centre</p>
-            <p>Travel Articles</p>
-          </div>
-          <div id="left_three">
-            <p>Do Business With Us</p>
-            <p>Owners & DMO/CVB</p>
-            <p>Business Advantage</p>
-            <p>Sponsored Placements</p>
-            <p>Access our Content API</p>
-            <p>Get The App</p>
-            <p>iPhone App</p>
-            <p>Android App</p>
+    <div id="navbar">
+      <div id="logo">
+        <a href="../index.html"
+          ><img
+            src="https://www.hotel-yearbook.com/picture/153007157.jpg"
+            alt="logo"
+        /></a>
+      </div>
+      <div id="input_tag">
+        <input id="input_box" type="text" />
+      </div>
+      <div id="Review">
+        <img
+          src="https://mpng.subpng.com/20180625/th/kisspng-computer-icons-writing-clip-art-scam-5b310754d7e896.2778623115299397968844.jpg"
+          alt="review"
+        />
+        <p><a href="../Newfolder/basket.html">Review</a></p>
+      </div>
+      <div id="trips">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2/2267.png"
+          alt="trips"
+        />
+        <p><a href="../trip.html">Trips</a></p>
+      </div>
+      <div id="alerts">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9_IK0n3lxxsEGO16HdOqnlqa_cKJQbDQdA&usqp=CAU"
+          alt="alerts"
+        />
+        <p><a href="../Newfolder/basket.html">Alerts</a></p>
+      </div>
+      <div id="signin">
+        <button><a href="../html/login.html">Sign in</a></button>
+      </div>
+    </div>
+    <div id="lower_navbar">
+      <p><a href="../index.html"> Home</a></p>
+      <p>Hotels</p>
+      <p>Things to do</p>
+      <p>Restaurants</p>
+      <p><a href="./flight.html"> Flights</a></p>
+      <p><a href="../Holiday Home/holidayHome.html"> Holiday homes</a></p>
+      <p>Shopping</p>
+      <p>
+        <a href="../Package Holidays/packageHolidays.html"> Package Holiday</a>
+      </p>
+      <p>Cruises</p>
+      <p>Car Hire</p>
+    </div>
+    <header>
+      <div id="head">
+        <p>Airlines>SpiceJet</p>
+        <p>SpiceJet Reviews and Flights</p>
+      </div>
+      <div id="flight_name">
+        <img
+          src="https://www.tripadvisor.in/img2/flights/airlines/logos/100x100/Spicejet.png"
+          alt=""
+        />
+        <p>SpiceJet</p>
+      </div>
+      <div id="reviewe">
+        <img src="./review1.jpg" alt="" />
+        <p>5,690 reviews</p>
+      </div>
+      <div id="contact">
+        <p>
+          Headquarters: Siroya Centre, Sahar Airport Road, Andheri, Mumbai India
+          400099
+        </p>
+        <p id="mobile">02239893333</p>
+        <p id="we">Website</p>
+        <p id="warn">Covid 19 Updates</p>
+      </div>
+    </header>
+    <div id="section">
+      <div id="menu">
+        <p>Round Trip</p>
+        <p>One-way</p>
+        <p>Multi-city</p>
+      </div>
+      <div id="input">
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" id="from" placeholder="From where ?" />
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" id="to" placeholder="To where ?" />
+        </div>
+        <div>
+          <i class="fa-solid fa-calendar-days"></i>
+          <input type="date" id="start" />
+
+          <input type="date" id="end" />
+        </div>
+        <div id="dropdown">
+          <p>2 Person, Economy</p>
+          <div id="sub_dropdown">
+            <select>
+              <option value="Economy">Economy</option>
+              <option value="Premium Economy">Premium Economy</option>
+              <option value="Business Class">Business Class</option>
+              <option value="First Class">First Class</option>
+            </select>
+            <div>
+              <h4>1 adult (18-64)</h4>
+              <div>
+                <i class="fa-solid fa-circle-minus"></i>
+                <i class="fa-solid fa-circle-plus"></i>
+              </div>
+            </div>
+            <div>
+              <h4>0 seniors (65+)</h4>
+              <div>
+                <i class="fa-solid fa-circle-minus"></i>
+                <i class="fa-solid fa-circle-plus"></i>
+              </div>
+            </div>
+            <div>
+              <h4>0 children (0-17)</h4>
+              <div>
+                <i class="fa-solid fa-circle-minus"></i>
+                <i class="fa-solid fa-circle-plus"></i>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="upper_right">
-          <p>Tripadvisor Sites</p>
-          <p>Book tours and attraction tickets on Viator</p>
+        <button id="submit">Find flight</button>
+      </div>
+      <div id="checktick">
+        <div id="nonStop">
+          <input type="checkbox" id="ch1" />
+
+          <label>Prefer nonstop</label>
+        </div>
+        <div id="near">
+          <input type="checkbox" id="ch2" />
+
+          <label>Include nearby airports</label>
+        </div>
+
+        <h4>Compare prices (in new window)</h4>
+        <div id="l3">
+          <input type="checkbox" />
+
+          <label>momondo</label>
         </div>
       </div>
+    </div>
+    <div class="s4">
+      <p class="o">Overview</p>
+      <div id="s4_r">
+        <div>
+          <div>
+            <p>3.5</p>
+            <img src="./review1.jpg" alt="" />
+          </div>
+          <p>5,690 reviews</p>
+        </div>
+        <div class="win">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTXx5ROJH4vwJkwardZnzCW8l4JPhVS39AQ&usqp=CAU"
+              alt=""
+            />
+            <p>Travellers' Choice 2017 Winner</p>
+          </div>
+        </div>
+
+        <div class="list">
+          <p>Legroom</p>
+          <img src="./r12.jpg" alt="" />
+        </div>
+        <div class="list">
+          <p>Seat comfort</p>
+          <img src="./r12.jpg" alt="" />
+        </div>
+        <div class="list">
+          <p>In-flight entertainment (WiFi, TV, films)</p>
+          <img src="./r3.jpg" alt="" />
+        </div>
+        <div class="list">
+          <p>Onboard Experience</p>
+          <img src="./r12.jpg" alt="" />
+        </div>
+        <div class="list">
+          <p>Customer service</p>
+          <img src="./r12.jpg" alt="" />
+        </div>
+        <div class="list">
+          <p>Value for money</p>
+          <img src="./r11.jpg" alt="" />
+        </div>
+        <div class="list">
+          <p>Cleanliness</p>
+          <img src="./r11.jpg" alt="" />
+        </div>
+        <div class="list">
+          <p>Check-in and boarding</p>
+          <img src="./r11.jpg" alt="" />
+        </div>
+        <div class="list">
+          <p>Food and beverage</p>
+          <img src="./r12.jpg" alt="" />
+        </div>
+        <p id="airDeal">Airline Deals</p>
+        <p id="sear">Search SpiceJet flights</p>
+      </div>
+      <div id="s4_a">
+        <p>About SpiceJet</p>
+        <p>Airline Summary</p>
+        <p>
+          Budget carrier SpiceJet (SG) is India’s second-biggest airline when
+          measured by the number of domestic passengers. The airline operates a
+          fleet of Boeing 737s, Dash 8- Q400 & freighters and is the country’s
+          largest regional player operating 63 daily flights under UDAN or the
+          Regional Connectivity Scheme. The airline flies to over 60
+          destinations, including more than 50 within India. The airline’s
+          international destinations include Bangladesh, Oman, Sri Lanka,
+          Thailand and the United Arab Emirates. The majority of the airline’s
+          fleet offers SpiceMax, the most spacious economy class seating in
+          India. Passengers who opt for SpiceMAX receive priority check-in,
+          boarding & baggage delivery; seats with extra legroom; and
+          complimentary meal & beverage. SpiceJet offers in-flight entertainment
+          on-board through its path-breaking SpiceScreen system, wherein flyers
+          can stream a wide variety of content directly on their personal
+          devices. The airline also operates a dedicated air cargo service under
+          the brand name SpiceXpress offering safe, on-time, efficient and
+          seamless cargo connectivity across India and on international routes.
+        </p>
+      </div>
+    </div>
+    <div class="s5">
+      <p class="o">Reviews</p>
+      <div id="s5_Tr">
+        <div>
+          <p class="he">Traveller rating</p>
+          <p class="he">Route</p>
+        </div>
+        <img src="./result rating.jpg" alt="" />
+      </div>
+      <div id="s5_LC">
+        <div>
+          <p class="he">Cabin</p>
+          <div>
+            <input type="checkbox" />
+            <label>Economy</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>Premium Economy</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>Business Class</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>First Class</label>
+          </div>
+        </div>
+        <div>
+          <p class="he">Language</p>
+          <input type="radio" />
+          <label>English(0)</label>
+        </div>
+      </div>
+    </div>
+    <div id="s4">
+      <input type="text" placeholder="Search" />
+    </div>
+    <div id="footer">
       <div id="lower">
         <div id="lower_left">
           <div id="lower_left_upper">
@@ -106,3 +350,4 @@
     </div>
   </body>
 </html>
+<script src="./indigo.js"></script>

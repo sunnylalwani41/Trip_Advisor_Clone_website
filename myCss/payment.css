@@ -1,13 +1,12 @@
-/* body {
-    //background-image: url("https://wallpaperaccess.com/full/4597125.png");
+body {
+    /* background-image: url("https://wallpaperaccess.com/full/4597125.png"); */
     background-size: cover;
-} */
+}
 
 #paycart {
     width: 25%;
-    /* margin-left: 5%; */
-    /* margin-top: 50px; */
-    margin: 50px auto auto auto;
+    margin-left: 5%;
+    margin-top: 25px;
     text-align: center;
     padding: 50px 30px;
     color: #fffffd;
@@ -15,25 +14,25 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-#paycart #toppay {
+#toppay {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-#paycart #payimg {
+#payimg {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
 
-#paycart #payimg>img {
+#payimg>img {
     width: 20%;
     background-color: white;
     border-radius: 5px;
 }
 
-#paycart input {
+input {
     font-size: 18px;
     margin-bottom: 20px;
     height: 30px;
@@ -41,30 +40,30 @@
     background: rgba(255, 255, 255, 0.6);
 }
 
-#paycart input:focus {
+input:focus {
     outline: none;
 }
 
-#paycart #cardyear {
+#cardyear {
     display: flex;
     margin-bottom: 20px;
 }
 
-#paycart #month {
+#month {
     background: rgba(255, 255, 255, 0.6);
 }
 
-#paycart #year {
+#year {
     background: rgba(255, 255, 255, 0.6);
 }
 
-#paycart select {
+select {
     height: 30px;
     font-size: 18px;
     margin-right: 20px;
 }
 
-#paycart #paymentprocess {
+#paymentprocess {
     border: none;
     height: 35px;
     background-color: black;
@@ -76,6 +75,6 @@
     margin-right: 5px;
 }
 
-#paycart #paymentprocess:hover {
+#paymentprocess:hover {
     background-color: rgb(69, 64, 64);
 }

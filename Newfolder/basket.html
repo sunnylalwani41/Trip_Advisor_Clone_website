@@ -4,10 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Footer</title>
-    <link rel="stylesheet" href="../css/footer.css" />
+    <title>Basket</title>
+    <link rel="stylesheet" href="./basket.css" />
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="./lowernavbar.css" />
+    <link rel="stylesheet" href="./footer.css" />
   </head>
-  <body>
+  <header>
+    <div id="navbar">
+      <div id="logo">
+        <a href="../index.html"
+          ><img
+            src="https://www.hotel-yearbook.com/picture/153007157.jpg"
+            alt="logo"
+        /></a>
+      </div>
+      <div id="input_tag">
+        <input id="input_box" type="text" />
+      </div>
+      <div id="Review">
+        <img
+          src="https://mpng.subpng.com/20180625/th/kisspng-computer-icons-writing-clip-art-scam-5b310754d7e896.2778623115299397968844.jpg"
+          alt="review"
+        />
+        <p><a href="../Newfolder/basket.html">Review</a></p>
+      </div>
+      <div id="trips">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2/2267.png"
+          alt="trips"
+        />
+        <p><a href="../trip.html">Trips</a></p>
+      </div>
+      <div id="alerts">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9_IK0n3lxxsEGO16HdOqnlqa_cKJQbDQdA&usqp=CAU"
+          alt="alerts"
+        />
+        <p><a href="../Newfolder/basket.html">Alerts</a></p>
+      </div>
+      <div id="signin">
+        <button><a href="../html/login.html">Sign in</a></button>
+      </div>
+    </div>
+    <div id="lower_navbar">
+      <p><a href="../index.html"> Home</a></p>
+      <p>Hotels</p>
+      <p>Things to do</p>
+      <p>Restaurants</p>
+      <p><a href="../flight/flight.html"> Flights</a></p>
+      <p><a href="../Holiday Home/holidayHome.html"> Holiday homes</a></p>
+      <p>Shopping</p>
+      <p><a href="../Package Holidays/packageHolidays.html"> Package Holiday</a></p>
+      <p>Cruises</p>
+      <p>Car Hire</p>
+    </div>
+  </header>
+  <body onload="main()">
+    <div id="mid_div">
+      <h1 id="heading">Basket</h1>
+      <a id="things_to_do" href="">
+        <div id="arrow">
+          <img src="https://cdn-icons-png.flaticon.com/128/507/507257.png" />
+        </div>
+        <span><u>See all things to do</u></span>
+      </a>
+      <div id="container">
+        <h1>Your Basket is Empty</h1>
+        <div>
+          <h1>
+            Add Things to Do to your basket. Now you can shop for tours,
+            attractions, and experiences.
+            <a href="">Explore Now</a>
+          </h1>
+        </div>
+      </div>
+      <div id="reviewOrder">
+        <h2>Review Order Details</h2>
+        <div class="flex">
+          <p class="RevText">Booking Fee</p>
+          <p class="RevText">₹0.00</p>
+        </div>
+        <div class="flex">
+          <p class="RevText">Subtotal</p>
+          <p class="RevText" id="subtotal">₹0.00</p>
+        </div>
+        <div class="flex">
+          <p class="RevText" id="Total">Total()</p>
+          <p class="RevText" id="total">₹0.00</p>
+        </div>
+        <p>No additional taxes & fees</p>
+        <div id="checkout"><a href="../html/checkout.html"> Checkout</a></div>
+      </div>
+    </div>
+    <div id="bookWith">
+      <h1>Book With Cofidence</h1>
+      <hr />
+      <img src="./images/image1.png" />
+    </div>
+  </body>
+  <footer>
     <div id="footer">
       <div id="main">
         <div id="upper_left">
@@ -104,5 +200,6 @@
         </div>
       </div>
     </div>
-  </body>
+  </footer>
 </html>
+<script src="./basket.js"></script>
