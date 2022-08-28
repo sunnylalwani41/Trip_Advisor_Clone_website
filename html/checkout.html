@@ -19,19 +19,20 @@
     <style>
         
 #mainbox{
+    /* border: 1px solid red; */
     width: 50%;
     height: auto;
-    margin: auto;
+    margin: 50px auto auto auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 40px 20px;
     border-radius: 10px;
 }
-h2{
+#mainbox h2{
     text-align: center;
     color: black;
     margin-bottom: 40px;
 }
-.submitbtn{
+#mainbox .submitbtn{
     width: 35%;
     margin: auto;
     display: flex;
@@ -45,11 +46,11 @@ h2{
     font-weight: 600;
     padding: 10px 20px;
 }
-.submitbtn:hover{
+#mainbox .submitbtn:hover{
     background-color: rgba(163, 163, 175, 0.2) 0px 7px 29px 0px;
 }
 
-.picker{
+#mainbox .picker{
     width: 100%;
     height: 38px;
     border: 1px solid rgb(199, 199, 199);
@@ -60,6 +61,7 @@ h2{
 
 @media only screen and (min-width: 550px) and (max-width: 999px){
     #mainbox{
+        margin-top:100px;
         width: 70%;
         height: auto;
         margin: auto;
@@ -67,7 +69,7 @@ h2{
         padding: 40px 20px;
         border-radius: 10px;
     }
-    .submitbtn{
+    #mainbox .submitbtn{
         width: 55%;
         margin: auto;
         display: flex;
@@ -81,13 +83,14 @@ h2{
         font-weight: 600;
         padding: 8px 16px;
     }
-    .submitbtn:hover{
+    #mainbox .submitbtn:hover{
         background-color: rgba(163, 163, 175, 0.2) 0px 7px 29px 0px;
     }
 
 }
 @media only screen and (min-width: 10px) and (max-width: 549px){
     #mainbox{
+        margin-top:100px;
         width: 90%;
         height: auto;
         margin: auto;
@@ -95,7 +98,7 @@ h2{
         padding: 40px 20px;
         border-radius: 10px;
     }
-    .submitbtn{
+    #mainbox .submitbtn{
         width: 65%;
         margin: auto;
         display: flex;
@@ -109,7 +112,7 @@ h2{
         font-weight: 600;
         padding: 5px 10px;
     }
-    .submitbtn:hover{
+    #mainbox .submitbtn:hover{
         background-color: #2c302c;
     }
 
@@ -330,7 +333,7 @@ h2{
           <!-- bootstrap address  -->
           
     </div>
-    <div id="footer">
+    <!-- <div id="footer">
         <div id="main">
             <div id="upper_left">
                 <div id="left_one">
@@ -412,7 +415,7 @@ h2{
             </div>
         </div>
 
-    </div>
+    </div> -->
    
 
     <script>
