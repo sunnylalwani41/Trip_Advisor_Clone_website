@@ -3,7 +3,7 @@
 
 This project is a team project of 5 members, Trip Advisor is an online traveling and hotel booking website. We built this cloning project
 Within 5 days and this is our first project during the Masai curriculum 
-[https://graceful-quokka-544c61.netlify.app/](https://glittering-zabaione-8fa013.netlify.app/)
+https://glittering-zabaione-8fa013.netlify.app/
 
 ## Features
 
@@ -18,7 +18,7 @@ Within 5 days and this is our first project during the Masai curriculum
 
 ## Installation
 
-- copy this [https://github.com/aasimsyed97/SugarCosmetics01.git](https://github.com/sunnylalwani41/rabid-flower-3002.git)
+- copy this https://glittering-zabaione-8fa013.netlify.app/
 - Select path where you want to store the project in your pc
 - open the corresponding file / folder with editor
 - open terminal of your editor
