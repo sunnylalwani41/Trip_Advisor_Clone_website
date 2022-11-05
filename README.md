@@ -37,7 +37,7 @@ https://glittering-zabaione-8fa013.netlify.app/
 
 ## Screenshots
 
-![App Screenshot](https://cdn.shopify.com/s/files/1/1301/1643/files/Weekend_offer-_landing_banner_2.jpg?v=1600581929)
+<img src="WebsiteScreenShot/Trip Advisor_Basket.PNG">
 
 ![App Screenshot](https://grocurv.com/media/images/Sugar_Website.width-800.png)
 
