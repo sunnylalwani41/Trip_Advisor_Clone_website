@@ -18,7 +18,7 @@ https://glittering-zabaione-8fa013.netlify.app/
 
 ## Installation
 
-- copy this https://glittering-zabaione-8fa013.netlify.app/
+- copy this https://github.com/sunnylalwani41/rabid-flower-3002.git
 - Select path where you want to store the project in your pc
 - open the corresponding file / folder with editor
 - open terminal of your editor
