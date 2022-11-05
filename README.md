@@ -36,9 +36,6 @@ https://glittering-zabaione-8fa013.netlify.app/
 
 
 ## Screenshots
-
+<img src="WebsiteScreenShot/Trip Advisor_LandingPage.PNG">
+<img src="WebsiteScreenShot/Trip Advisor_Menu.PNG">
 <img src="WebsiteScreenShot/Trip Advisor_Basket.PNG">
-
-![App Screenshot](https://grocurv.com/media/images/Sugar_Website.width-800.png)
-
-![App Screenshot](https://www.couponmoto.com/storage/store/description/sugar-cosmetics-coupon-code.png)
