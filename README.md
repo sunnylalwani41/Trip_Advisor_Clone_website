@@ -1,7 +1,7 @@
 
 # TripAdvisor_clone
 
-This project is a team project of 6 members, Trip Advisor is an online traveling and hotel booking website. We built this cloning project
+This project is a team project of 5 members, Trip Advisor is an online traveling and hotel booking website. We built this cloning project
 Within 5 days and this is our first project during the Masai curriculum 
 https://graceful-quokka-544c61.netlify.app/
 
