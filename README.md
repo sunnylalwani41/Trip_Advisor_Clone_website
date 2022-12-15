@@ -37,10 +37,10 @@ https://glittering-zabaione-8fa013.netlify.app/
 
 # Screenshots
 ## Landing Page
-<img src="WebsiteScreenShot/Trip Advisor_LandingPage.PNG">
+<img src="./WebsiteScreenShot/Trip Advisor_LandingPage.png">
 
 ## Product Page
-<img src="WebsiteScreenShot/Trip Advisor_Menu.PNG" border="5px solid black">
+<img src="./WebsiteScreenShot/Trip Advisor_Menu.PNG" border="5px solid black">
 
 ## Basket Page
-<img src="WebsiteScreenShot/Trip Advisor_Basket.PNG" border="5px solid black" margin-top="2px">
+<img src="WebsiteScreenShot/Trip Advisor_Basket.PNG">
