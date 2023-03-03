@@ -24,7 +24,7 @@ https://glittering-zabaione-8fa013.netlify.app/
 - open terminal of your editor
 - use  --> git clone (paste link) <-- 
 - after project cloned to your folder
-- go to index.html inside homenavbar folder
+- go to index.html inside Trip_Advisor_Clone_website folder
 - open with live server
     
 ## Tech Stack
